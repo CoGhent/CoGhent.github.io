@@ -1,8 +1,6 @@
 ---
-layout: page
-title: About
-permalink: /about/
-nav_order: 1
+layout: home
+nav_exclude: true
 ---
 
-Developer Documentation Collections of Ghent (CoGhent)  
+# Developer Documentation Collections of Ghent (CoGhent)  
