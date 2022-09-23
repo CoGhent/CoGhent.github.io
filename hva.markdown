@@ -109,5 +109,6 @@ They are divided among the following **collections**:
 | voeding             | 1.264 |
 | vervoer             | 305   |
 
+## Event Stream
 
-link: https://apidg.gent.be/opendata/adlib2eventstream/v1/hva/objecten
+[link](https://apidg.gent.be/opendata/adlib2eventstream/v1/hva/objecten)
