@@ -41,9 +41,9 @@ The [House of Alijn](https://huisvanalijn.be) is a museum about everyday life. I
 | [time of creation - end - precision](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P4)       | Gebeurtenis.tijd              | [Precisie einddatum](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Precisie_einddatum)                                          |
 | [iconography subject](https://www.cidoc-crm.org/Property/p62-depicts/version-6.2.1)            | Entiteit.beeldtUit            | [Naam afgebeelde gebeurtenis](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Naam_afgebeelde_gebeurtenis)                        |
 | [iconography person/institution](https://www.cidoc-crm.org/Property/p62-depicts/version-6.2.1) | Entiteit.beeldtUit            | [Naam afgebeelde persoon/instelling](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Naam_afgebeelde_persoon_of_instelling)       |
-| [associated person/instituion](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P67)            | InformatieObject.verwijstNaar | [Naam geassocieerde persoon/instelling](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Naam_geassocieerde_persoon_of_instelling) |
+| [associated person/institution](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P67)            | InformatieObject.verwijstNaar | [Naam geassocieerde persoon/instelling](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Naam_geassocieerde_persoon_of_instelling) |
 | [associated subject](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P129)                     | InformatieObject.gaatOver     | [Naam geassocieerd concept](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Naam_geassocieerd_concept)                            |
-| [associated period](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P67)                       | InformatieObject.verwijstNaar | [Naam geassocieerde periode]                                                                                                                         |
+| [associated period](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P67)                       | InformatieObject.verwijstNaar | Naam geassocieerde periode                                                                                                                         |
 
 ## Published Collections
 
