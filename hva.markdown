@@ -8,7 +8,15 @@ nav_order: 2
 
 ## **Huis van Alijn** 
 
-The event stream currently contains **8.123 records** from the collection of **Huis van Alijn**. The mapping of the available metadata in this event stream can be found [here](https://app.gitbook.com/o/-MaDy7qNCF9HTgoNJPP6/s/-MaDyFunOfBA0nHUQZv_/datamappings/overzicht-velden-datamapping). 
+# General introduction
+
+# Mapping
+
+The mapping of the available metadata in this event stream can be found [here](https://app.gitbook.com/o/-MaDy7qNCF9HTgoNJPP6/s/-MaDyFunOfBA0nHUQZv_/datamappings/overzicht-velden-datamapping).
+
+# Published Collections
+
+The event stream currently contains **8.123 records** from the collection of **Huis van Alijn**. 
 The event stream of Huis van Alijn consists of the following **media**:
 
 | MEDIA                                    |       |
