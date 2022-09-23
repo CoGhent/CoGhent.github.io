@@ -12,6 +12,7 @@ The event stream currently contains **8.792 records** from the collection of het
 Event stream containing objects from the collection of Industriemuseum.
 
 The event stream of Industriemuseum consists of the following **media**:
+
 | MEDIA                                 |                                  |
 |---------------------------------------|----------------------------------|
 | Objects                               | recordnumber starting with **V** |
@@ -20,6 +21,7 @@ The event stream of Industriemuseum consists of the following **media**:
 | Documents                             | recordnumber starting with **D** |
 
 The records in the eventstream are centered around the following **collections**: 
+
 | COLLECTIONS AND THEMES   |                                  |
 |--------------------------|----------------------------------|
 | **Textile**              | interior textiles                |
