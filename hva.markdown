@@ -18,7 +18,9 @@ nav_order: 2
 
 ## General introduction
 
+
 The [House of Alijn](https://huisvanalijn.be) is a museum about everyday life. It explores customs, traditions and rituals from the recent and distant past. 
+
 
 ## Published Metadata
 
@@ -67,47 +69,51 @@ They are divided among the following **collections**:
 - Leisure
 - Daily life
 
-| **Stage in life**   |       |
-|---------------------|-------|
-| birth               | 244   |
-| education           | 371   |
-| rite of passage     | 203   |
-| marriage            | 406   |
-| death               | 81    |
+| **Stage in life**             |       |
+|-------------------------------|-------|
+| geboorte (*birth*)            | 244   |
+| onderwijs (*education*)       | 371   |
+| communie (*rites of passage*) | 203   |
+| huwelijk (*marriage*)         | 406   |
+| dood/rouw (*death*)           | 81    |
 
 
 
-| **Rituals & traditions**|       |
-| new Year                | 236   |
-| easter                  | 104   |
-| carnaval                | 30    |
-| valentine               | 141   |
-| aprils fools            | 28    |
-| motherday               | 11    |
-| fatherday               | 17    |
-| christmas               | 114   |
-| Drie Koningen           | 6     |
-| Sinterklaas             | 277   |
-| birthday                | 64    |
+| **Rituals & traditions**                 |       |
+|------------------------------------------|-------|
+| nieuwjaardag (*New Year*)                | 236   |
+| Pasen (*Easter*)                         | 104   |
+| carnaval (*carnaval*)                    | 30    |
+| valentijnsdag (*valentine*)              | 141   |
+| 1 april (*Aprils fools*)                 | 28    |
+| moederdag (*motherday*)                  | 11    |
+| vaderdag (*fatherday*)                   | 17    |
+| Kerstmis (*Christmas*)                   | 114   |
+| Drie Koningen (*Epiphany*)               | 6     |
+| Sinterklaas                              | 277   |
+| verjaardag (*birthday*)                  | 64    |
 
 
-| **Leisure**         |       |
-| circus              | 2.152 |
-| puppetry            | 85    |
-| optocht             | 194   |
-| kermis              | 299   |
-| zesdaagse           | 62    |
-| vakantie            | 607   |
+| **Leisure**                        |       |
+|------------------------------------|-------|
+| circus                             | 2.152 |
+| poppenspel (*puppetry*)            | 85    |
+| optocht (*parades & processions*)  | 194   |
+| kermis (*fairs*)                   | 299   |
+| zesdaagse (*cycling*)              | 62    |
+| vakantie (*holiday*)               | 607   |
+| ...                                | ...   |
 
 
-| **Daily life**      |       |
-| lichaamsverzorging  | 82    |
-| huishouden          | 323   |
-| rook                | 86    |
-| speelgoed           | 1036  |
-| huisdier            | 123   |
-| voeding             | 1.264 |
-| vervoer             | 305   |
+| **Daily life**                     |       |
+|------------------------------------|-------|
+| lichaamsverzorging                 | 82    |
+| huishouden                         | 323   |
+| rook                               | 86    |
+| speelgoed (*toys*)                 | 1036  |
+| huisdier (*pets*)                  | 123   |
+| voeding (*food*)                   | 1.264 |
+| vervoer (*transportation*)         | 305   |
 
 ## Event Stream
 
