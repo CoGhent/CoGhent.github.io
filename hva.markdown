@@ -10,7 +10,7 @@ nav_order: 2
 
 ## General introduction
 
-## Mapping
+## Published Metadata
 
 The mapping of the available metadata in this event stream can be found [here](https://app.gitbook.com/o/-MaDy7qNCF9HTgoNJPP6/s/-MaDyFunOfBA0nHUQZv_/datamappings/overzicht-velden-datamapping).
 
