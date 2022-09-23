@@ -1,7 +1,7 @@
 ---
 layout: page
 title: STAM
-parent: STAM
+parent: LDES
 nav_order: 4
 ---
 
