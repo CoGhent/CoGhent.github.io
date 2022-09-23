@@ -8,6 +8,16 @@ nav_order: 1
 
 # LDES (Linked Data Event Stream)
 
-Linked Data Event streams published directly at the source containing information on objects from five cultural heritage organizations in the city of Ghent as well as links to the manifests where the images for the published objects can be fetched. 
+Collections of Ghent publisched multiple Linked Data Event streams containing information on objects from five cultural heritage organizations located in the city of Ghent: 
+- Design Museum Gent
+- Huis van Alijn
+- Industriemuseum
+- STAM
+- Archief Gent
 
-There are five eventstreams, one for every participating cultural heritage organization. In addition three extra event streams are published: one documenting the agent lists from all five institutions and one documenting the thesaurus (concepts) from all five institutions, and one exposing exhibition data from Design Museum Gent.
+The Linked Data Event Streams are enriched with links to IIIF manifests containing the images of the published objects. 
+
+In addition three extra event streams have been published: 
+- Agent lists from all five institutions 
+- Thesaurus (concepts) from all five institutions
+- Exhibition data from Design Museum Gent.
