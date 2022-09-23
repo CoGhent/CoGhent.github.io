@@ -69,6 +69,10 @@ They are divided among the following **collections**:
 - Leisure
 - Daily life
 
+<table>
+<tr><th></th><th></th></tr>
+<tr><td>
+
 | **Stage in life**             |       |
 |-------------------------------|-------|
 | geboorte (*birth*)            | 244   |
@@ -77,7 +81,7 @@ They are divided among the following **collections**:
 | huwelijk (*marriage*)         | 406   |
 | dood/rouw (*death*)           | 81    |
 
-
+</td><td>
 
 | **Rituals & traditions**                 |       |
 |------------------------------------------|-------|
@@ -93,7 +97,8 @@ They are divided among the following **collections**:
 | Sinterklaas                              | 277   |
 | verjaardag (*birthday*)                  | 64    |
 
-
+</td></tr> </table>
+  
 | **Leisure**                        |       |
 |------------------------------------|-------|
 | circus                             | 2.152 |
