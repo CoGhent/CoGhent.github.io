@@ -25,7 +25,7 @@ Not every heritage object published in the event streams have images or images t
 message:	"You don't have permission to access this resource"
 ```
 
-You can check if there is a IIIF manifest by using the following code:  
+You can check if there is a IIIF manifest by using the following python code:  
 
 ```
 try:
