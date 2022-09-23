@@ -97,7 +97,7 @@ They are divided among the following **collections**:
 | Sinterklaas                              | 277   |
 | verjaardag (*birthday*)                  | 64    |
 
-</td></tr> </table>
+</td><td>
   
 | **Leisure**                        |       |
 |------------------------------------|-------|
@@ -109,6 +109,7 @@ They are divided among the following **collections**:
 | vakantie (*holiday*)               | 607   |
 | ...                                | ...   |
 
+</td><td>
 
 | **Daily life**                     |       |
 |------------------------------------|-------|
@@ -119,6 +120,8 @@ They are divided among the following **collections**:
 | huisdier (*pets*)                  | 123   |
 | voeding (*food*)                   | 1.264 |
 | vervoer (*transportation*)         | 305   |
+  
+</td></tr> </table>
 
 ## Event Stream
 
