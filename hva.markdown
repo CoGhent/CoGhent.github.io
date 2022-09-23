@@ -77,17 +77,17 @@ They are divided among the following **collections**:
 
 
 | **Rituals & traditions**|       |
-| new Year            | 236   |
-| easter              | 104   |
-| carnaval            | 30    |
-| valentine           | 141   |
-| aprils fools        | 28    |
-| motherday           | 11    |
-| fatherday           | 17    |
-| christmas           | 114   |
-| Drie Koningen       | 6     |
-| Sinterklaas         | 277   |
-| birthday            | 64    |
+| new Year                | 236   |
+| easter                  | 104   |
+| carnaval                | 30    |
+| valentine               | 141   |
+| aprils fools            | 28    |
+| motherday               | 11    |
+| fatherday               | 17    |
+| christmas               | 114   |
+| Drie Koningen           | 6     |
+| Sinterklaas             | 277   |
+| birthday                | 64    |
 
 | **Leisure**         |       |
 | circus              | 2.152 |
@@ -97,7 +97,7 @@ They are divided among the following **collections**:
 | zesdaagse           | 62    |
 | vakantie            | 607   |
 
-| **Daily lifeN**     |       |
+| **Daily life**      |       |
 | lichaamsverzorging  | 82    |
 | huishouden          | 323   |
 | rook                | 86    |
