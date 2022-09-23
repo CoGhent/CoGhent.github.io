@@ -76,7 +76,7 @@ They are divided among the following **collections**:
 | death               | 81    |
 
 
-| **Holidays, rituals & traditions**    |       |
+| **Rituals & traditions**|       |
 | new Year            | 236   |
 | easter              | 104   |
 | carnaval            | 30    |
