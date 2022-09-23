@@ -5,8 +5,16 @@ parent: LDES
 nav_order: 2
 ---
 
-
 # **Huis van Alijn** 
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 ## General introduction
 
@@ -53,35 +61,43 @@ The event stream of Huis van Alijn consists of the following **media**:
 | - Posters          | AF-          |  15   |
 | Photographs        | JJJJ-XXX-XXX |  526  |
 
-They are divided among the following **collections** (InformatieObject.gaatOver) (https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P129):
+They are divided among the following **collections**:
+- Important stages in life
+- Jearly rituals and traditions
+- Leisure
+- Daily life
 
-| **LEVENSFASEN**     |       |
+| **Stage in life**     |       |
 |---------------------|-------|
-| geboorte            | 244   |
-| onderwijs           | 371   |
-| communie            | 203   |
-| huwelijk            | 406   |
-| dood/rouw           | 81    |
-| **JAARKALENDER**    |       |
-| nieuwjaarsdag       | 236   |
-| Pasen               | 104   |
+| birth               | 244   |
+| education           | 371   |
+| rite of passage     | 203   |
+| marriage            | 406   |
+| death               | 81    |
+
+
+| **Holidays, rituals & traditions**    |       |
+| new Year            | 236   |
+| easter              | 104   |
 | carnaval            | 30    |
-| valentijn           | 141   |
-| 1 april             | 28    |
-| moederdag           | 11    |
-| vaderdag            | 17    |
-| Kerstmis            | 114   |
+| valentine           | 141   |
+| aprils fools        | 28    |
+| motherday           | 11    |
+| fatherday           | 17    |
+| christmas           | 114   |
 | Drie Koningen       | 6     |
 | Sinterklaas         | 277   |
-| verjaardag          | 64    |
-| **VRIJE TIJD**      |       |
+| birthday            | 64    |
+
+| **Leisure**         |       |
 | circus              | 2.152 |
-| poppenspel          | 85    |
+| puppetry            | 85    |
 | optocht             | 194   |
 | kermis              | 299   |
 | zesdaagse           | 62    |
 | vakantie            | 607   |
-| **DAGELIJKS LEVEN** |       |
+
+| **Daily lifeN**     |       |
 | lichaamsverzorging  | 82    |
 | huishouden          | 323   |
 | rook                | 86    |
