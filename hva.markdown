@@ -67,13 +67,14 @@ They are divided among the following **collections**:
 - Leisure
 - Daily life
 
-| **Stage in life**     |       |
+| **Stage in life**   |       |
 |---------------------|-------|
 | birth               | 244   |
 | education           | 371   |
 | rite of passage     | 203   |
 | marriage            | 406   |
 | death               | 81    |
+
 
 
 | **Rituals & traditions**|       |
@@ -89,6 +90,7 @@ They are divided among the following **collections**:
 | Sinterklaas             | 277   |
 | birthday                | 64    |
 
+
 | **Leisure**         |       |
 | circus              | 2.152 |
 | puppetry            | 85    |
@@ -96,6 +98,7 @@ They are divided among the following **collections**:
 | kermis              | 299   |
 | zesdaagse           | 62    |
 | vakantie            | 607   |
+
 
 | **Daily life**      |       |
 | lichaamsverzorging  | 82    |
@@ -105,7 +108,6 @@ They are divided among the following **collections**:
 | huisdier            | 123   |
 | voeding             | 1.264 |
 | vervoer             | 305   |
-
 
 
 link: https://apidg.gent.be/opendata/adlib2eventstream/v1/hva/objecten
