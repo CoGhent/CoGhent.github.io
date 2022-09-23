@@ -70,7 +70,7 @@ They are divided among the following **collections**:
 - Daily life
 
 <table>
-<tr><th></th><th></th></tr>
+<tr></tr>
 <tr><td>
 
 | **Stage in life**             |       |
