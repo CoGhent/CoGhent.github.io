@@ -37,15 +37,21 @@ The [House of Alijn](https://huisvanalijn.be) is a museum about everyday life. I
 
 ## Published Collections
 
-The event stream currently contains **8.123 records** from the collection of **Huis van Alijn**. 
+The event stream currently contains **10.038 records** from the collection of **Huis van Alijn**. 
 The event stream of Huis van Alijn consists of the following **media**:
 
-| MEDIA                                    |       |
-|------------------------------------------|-------|
-| Objects                                  | 1.673 |
-| Digital collection (photo, video, audio) | 4.707 |
-| Photo collection                         | 375   |
-| Documents                                | 1.368 |
+| MEDIA              | OBJECTNUMBER | #     |
+|--------------------|--------------|-------|
+| Objects            | JJJJ-XXX-XXX | 1.773 |
+| Digital Collection |              | 4.822 |
+| - Photographs      | FO- or DIA-  | 2.873 |
+| - Videos           | F0- or VI-   |  147  |
+| - Audio            | AU-          |  197  |
+| - Digital Born     | DB-          |   0   |
+| Documents          | JJJJ-XXX-XXX | 2.917 |
+| - Advertisements   | RE-          |  106  |
+| - Posters          | AF-          |  15   |
+| Photographs        | JJJJ-XXX-XXX |  526  |
 
 They are divided among the following **collections** (InformatieObject.gaatOver) (https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P129):
 
