@@ -16,6 +16,25 @@ nav_order: 4
 
 ## union
 
+*for example*
+
+```
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX la: <https://linked.art/ns/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?instelling ?title 
+WHERE {
+  ?object cidoc:P50_has_current_keeper ?instelling .
+  ?object cidoc:P102_has_title ?title .
+  ?object cidoc:P41i_was_classified_by ?identifier .
+  ?identifier cidoc:P42_assigned ?objectnaam .
+  ?objectnaam skos:prefLabel ?ojn .
+  ?object cidoc:P108i_was_produced_by ?vervaardiging .
+  ?vervaardiging cidoc:P14_carried_out_by ?maker .
+  {?maker la:equivalent <https://stad.gent/id/agent/670003618> } UNION {?maker la:equivalent <https://stad.gent/id/agent/570025558>} .
+} LIMIT 100!
+```
+
 ## pagination
 
 the SparQL endpoint limits results to 1.000 lines. If a query has more than 1.000 results, multiple queries, using OFFSET and LIMIT, are necessary to obtain the entire result. 
