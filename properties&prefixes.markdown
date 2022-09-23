@@ -25,6 +25,7 @@ nav_order: 2
 - rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 - purl: http://purl.org/dc/terms/
 - owl: http://www.w3.org/2002/07/owl#
+- prov: <http://www.w3.org/ns/prov#>
 
 ## Properties
 
@@ -62,3 +63,10 @@ nav_order: 2
 |                    | [material](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P45)                                | MensgemaaktObject.materiaal               | [Term materiaal](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Term_materiaal)                                                  | cidoc:P45_consists_of cidoc:P2_has_type skos:prefLabel                                                 |
 
 ### Thesaurus
+
+| **TERM**        | **OSLO**             | **SPARQL PROPERTY**           |
+|-----------------|----------------------|-------------------------------|
+| term            | skos:prefLabel       | skos:prefLabel                |
+| priref          | Object.identificator | adms:identifier skos:notation |
+| source          | owl:sameAs           | owl:sameAs                    |
+| publishing date | prov:generetedAtTime | prov:generatedAtTime          |
