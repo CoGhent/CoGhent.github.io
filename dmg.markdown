@@ -37,4 +37,6 @@ They are divided among the following **collections** (MensgemaaktObject.maaktDee
 Art Nouveau and Art Deco objects are also published (with images) but these are not part of a named collection. They can be identified through the object number: objects starting with FH (Fonds Havermans) and most of the objects acquired in 1987 (object number starts with 1987-.
 Design Museum Gent uses a different naming for partial and overarching records (for example a set of tableware containing multiple plates, forks, etc. or chairs and a table belonging to the same set). Overarching records have names that end in "-0_XX (amount of partial records)", while partial records end in "-1_XX", "-2_XX", ... depending on the amount of objects in a set. Only the overarching records have images that are publicly available and IIIF-manifests. 
 
-link: https://apidg.gent.be/opendata/adlib2eventstream/v1/dmg/objecten
+## LDES
+
+link: [https://apidg.gent.be/opendata/adlib2eventstream/v1/dmg/objecten](https://apidg.gent.be/opendata/adlib2eventstream/v1/dmg/objecten)
