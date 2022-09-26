@@ -5,7 +5,8 @@ parent: API
 nav_order: 1
 ---
 
-## **Linked Data Event Streams** 
+# **Linked Data Event Streams** 
+
 
 |Abbreviation|Publishing organisation|LDES|
 |---------|----------|-----------|
