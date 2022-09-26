@@ -19,6 +19,7 @@ nav_order: 3
 Use SELECT to define which data you want to have returned with your query. 
 
 *for example*
+
 This query will return the first 1.000 titles of objects that are published in the linked data event streams from the five participating cultural heritage institutions.
 
 ```
@@ -42,7 +43,51 @@ WHERE {
 }
 ```
 
+When querying for fields that are linked to thesaurus terms or persons and institutions from the agents list, the result will be a external link to the concept.
 
+*for example*
+
+```
+PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT ?ojectnaam FROM <http://stad.gent/ldes/hva> 
+WHERE { 
+  ?record cidoc:P41i_was_classified_by ?identifier.
+  ?identifier cidoc:P42_assigned ?ojectnaam.
+} 
+```
+
+To obtain the label of the terms, use SKOS or RDFS. 
+
+*for example*
+
+```
+PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?label FROM <http://stad.gent/ldes/hva> 
+WHERE { 
+  ?record cidoc:P41i_was_classified_by ?identifier.
+  ?identifier cidoc:P42_assigned ?objectnaam.
+  ?objectnaam skos:prefLabel ?label
+}
+```
+
+In addition, it is also possible to query on specific terms or agents, using the link to the external thesauri
+
+*for example*
+
+```
+PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?record ?title FROM <http://stad.gent/ldes/hva> 
+WHERE { 
+  ?record cidoc:P102_has_title ?title.
+  ?record cidoc:P41i_was_classified_by ?identifier.
+  ?identifier cidoc:P42_assigned <http://vocab.getty.edu/aat/300192646>.
+}
+```
 
 ## count
 
@@ -54,6 +99,22 @@ WHERE {
 
 
 ## union
+
+To query on multiple endpoint, it suffices to add the endpoints to the query.
+*for example*
+
+```
+PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT ?title 
+FROM <http://stad.gent/ldes/hva> 
+FROM <http://stad.gent/ldes/dmg> 
+WHERE { 
+  ?start cidoc:P102_has_title ?title.
+} ![image](https://user-images.githubusercontent.com/78723853/192251642-77b38b40-1131-48d8-8358-8444e34aae7b.png)
+```
+
+However, when the query gets to complicated, it is better to use UNION.
 
 *for example*
 
@@ -76,7 +137,7 @@ WHERE {
 
 ## pagination
 
-the SparQL endpoint limits results to 1.000 lines. If a query has more than 1.000 results, multiple queries, using OFFSET and LIMIT, are necessary to obtain the entire result. 
+the SparQL endpoint limits results to 1.000 lines. If a query has more than 1.000 results, multiple queries *(each containing the next 1.000 results)*, using OFFSET and LIMIT, are necessary to obtain the entire result. 
 
 *for example*
 
