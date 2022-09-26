@@ -98,7 +98,11 @@ They are divided among the following **collections**:
 | verjaardag (*birthday*)                  | 64    |
 | ...                                      | ...   |
 
-</td><td>
+</td></tr> </table>
+
+<table>
+<tr></tr>
+<tr><td>
   
 | **Leisure**                        |       |
 |------------------------------------|-------|
