@@ -19,7 +19,9 @@ nav_order: 1
 
 ## General
 
+A Linked Data Event Stream is a collection of immutable objects (such as version objects, sensor observations or archived representation). Each object is described in RDF.
 
+The objective of a Linked Data Event Stream is to allow consumers to replicate all of its items and to stay in sync when items are added.
 
 ## CoGent Linked Data Event Streams
 
