@@ -6,7 +6,24 @@ nav_order: 1
 ---
 
 
-## **Design Museum Gent** 
+# **Design Museum Gent** 
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+## General introduction
+
+
+## Published Metadata
+
+
+## Published Collections
 
 The mapping of the available metadata in this event stream can be found [here](https://app.gitbook.com/o/-MaDy7qNCF9HTgoNJPP6/s/-MaDyFunOfBA0nHUQZv_/datamappings/overzicht-velden-datamapping). This Event Stream currently contains **1.237 records** from the collection of **Design Museum Gent**. 
 They are divided among the following **collections** (MensgemaaktObject.maaktDeelUitVan):
