@@ -22,6 +22,19 @@ nav_order: 3
 
 ## Published Metadata
 
+| CIDOC                                 | OSLO                             | CEST       |                                                
+|---------------------------------------|----------------------------------|------------|
+|[publishing institution](http://www.cidoc-crm.org/html/5.0.4/cidoc-crm.html#P50)|MaterieelDing.Beheerder|[Naam Bewaarinstelling](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Naam_bewaarinstelling)|    
+|objectnumber|Object.identificator|[Waarde Objectnummer](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Waarde_objectnummer)|    
+|[objectcategory](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P41)|Entiteit.classificatie|[Term Objectcategorie](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Term_objectcategorie)|
+|[objectname](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P41)|Entiteit.classificatie|[Term Objectnaam](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Term_objectnaam)|
+|[title](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P102)|MensgemaaktObject.titel|[Titel](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Titel)|
+|[note](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P3)|Entiteit.beschrijving|[Korte Beschrijving](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Korte_beschrijving)|
+|[creator](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P14)| Activiteit.uitgevoerdDoor| [Naam Vervaardiger](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Naam_vervaardiger)|
+||||
+||||
+||||
+||||
 
 ## Published Collections
 
