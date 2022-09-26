@@ -1,6 +1,6 @@
 ---
 layout: page
-title: basic queries
+title: Basic queries
 parent: SparQL Endpoint
 nav_order: 3
 ---
