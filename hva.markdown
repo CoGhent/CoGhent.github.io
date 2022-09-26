@@ -69,10 +69,6 @@ They are divided among the following **collections**:
 - Leisure
 - Daily life
 
-<table>
-<tr></tr>
-<tr><td>
-
 | **Stage in life**             |       |
 |-------------------------------|-------|
 | geboorte (*birth*)            | 244   |
@@ -81,7 +77,6 @@ They are divided among the following **collections**:
 | huwelijk (*marriage*)         | 406   |
 | dood/rouw (*death*)           | 81    |
 
-</td><td>
 
 | **Rituals & traditions**                 |       |
 |------------------------------------------|-------|
@@ -98,12 +93,7 @@ They are divided among the following **collections**:
 | verjaardag (*birthday*)                  | 64    |
 | ...                                      | ...   |
 
-</td></tr> </table>
-
-<table>
-<tr></tr>
-<tr><td>
-  
+ 
 | **Leisure**                        |       |
 |------------------------------------|-------|
 | circus                             | 2.152 |
@@ -114,7 +104,6 @@ They are divided among the following **collections**:
 | vakantie (*holiday*)               | 607   |
 | ...                                | ...   |
 
-</td><td>
 
 | **Daily life**                     |       |
 |------------------------------------|-------|
@@ -127,8 +116,6 @@ They are divided among the following **collections**:
 | vervoer (*transportation*)         | 305   |
 | ...                                | ...   |
   
-</td></tr> </table>
-
 ## LDES
 
 link: [(https://apidg.gent.be/opendata/adlib2eventstream/v1/hva/objecten)](https://apidg.gent.be/opendata/adlib2eventstream/v1/hva/objecten)
