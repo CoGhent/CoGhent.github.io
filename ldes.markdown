@@ -21,6 +21,8 @@ nav_order: 1
 
 A Linked Data Event Stream is a collection of versioned objects (a version is like an event) and can be updated anytime at their own pace (slow and fast data). This way, consumers can easily discover and harvest the latest changes.
 
+If you are new to the concept of Linked Data Event Stream or Linked Data, [this short training](https://academy.europa.eu/courses/publishing-data-with-linked-data-event-streams-why-and-how) introduces the main concepts.
+
 ## CoGent Linked Data Event Streams
 
 Collections of Ghent published multiple Linked Data Event streams containing information on objects from five cultural heritage organizations located in the city of Ghent: 
