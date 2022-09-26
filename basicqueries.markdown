@@ -16,6 +16,19 @@ nav_order: 3
 
 ## select
 
+Use SELECT to define which data you want to have returned with your query. 
+
+*for example*
+
+```
+PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT ?title
+WHERE { 
+  ?record cidoc:P102_has_title ?title.
+} ![image](https://user-images.githubusercontent.com/78723853/192247528-a1144076-3b6d-4af5-8cb9-b36b39393354.png)
+```
+
 ## count
 
 ## filter
