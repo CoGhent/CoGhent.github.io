@@ -16,6 +16,8 @@ nav_order: 4
 
 # Run queries in browser
 
+queries can be run directly in the browser using services such as Comunica and Virtuoso. 
+
 ## Comunica
 
 [Comunica](https://comunica.dev/)'s Link traversal feature can be used to directly fetch links to the IIIF image API when querying the SPARQL endpoint. 
