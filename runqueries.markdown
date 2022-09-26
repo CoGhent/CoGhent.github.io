@@ -5,6 +5,8 @@ parent: SparQL Endpoint
 nav_order: 4
 ---
 
+# Run Queries
+
 <details open markdown="block">
   <summary>
     Table of contents
