@@ -14,7 +14,7 @@ nav_order: 3
 {:toc}
 </details>
 
-## select
+## Select
 
 Use SELECT to define which data you want to have returned with your query. 
 
@@ -90,16 +90,32 @@ WHERE {
 }
 ```
 
-## count
+## Count
 
-## filter
+## Filter
 
-## order
+Use FILTER to get a more detailed result.
 
-## bind
+*for example*
 
+```
+PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
 
-## union
+SELECT ?title 
+FROM <http://stad.gent/ldes/hva> 
+WHERE { 
+  ?start cidoc:P102_has_title ?title.
+  FILTER (regex(?title, "Gent", "i"))
+} 
+```
+
+## Bind
+
+## Distinct
+
+## Order by
+
+## Union
 
 To query on multiple endpoint, it suffices to add the endpoints to the query.
 
@@ -113,7 +129,7 @@ FROM <http://stad.gent/ldes/hva>
 FROM <http://stad.gent/ldes/dmg> 
 WHERE { 
   ?start cidoc:P102_has_title ?title.
-} ![image](https://user-images.githubusercontent.com/78723853/192251642-77b38b40-1131-48d8-8358-8444e34aae7b.png)
+} 
 ```
 
 However, when the query gets to complicated, it is better to use UNION.
