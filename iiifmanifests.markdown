@@ -16,7 +16,7 @@ Images of published objects from the 5 cultural heritage organisations and their
 |hva|Huis van Alijn|https://api.collectie.gent/iiif/presentation/v2/manifest/hva:*objectnumber*|
 |industriemuseum|Industriemuseum|https://api.collectie.gent/iiif/presentation/v2/manifest/industriemuseum:*objectnumber*|
 |stam|STAM|https://api.collectie.gent/iiif/presentation/v2/manifest/stam:*objectnumber*|
-|archiefgent|Archief Gent|https://api.collectie.gent/iiif/presentation/v2/manifest/|archiefgent:*objectnumber*|
+|archiefgent|Archief Gent|https://api.collectie.gent/iiif/presentation/v2/manifest/archiefgent:*objectnumber*|
 
 The IIIF manifest contains the link to the image as well as additional data such as licence of the image, format of the image, size of the image, source of the image and so on.
 
