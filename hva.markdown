@@ -127,4 +127,4 @@ They are divided among the following **collections**:
 
 ## LDES
 
-Link: [(https://apidg.gent.be/opendata/adlib2eventstream/v1/hva/objecten)](https://apidg.gent.be/opendata/adlib2eventstream/v1/hva/objecten)
+link: [(https://apidg.gent.be/opendata/adlib2eventstream/v1/hva/objecten)](https://apidg.gent.be/opendata/adlib2eventstream/v1/hva/objecten)
