@@ -41,6 +41,11 @@ nav_order: 3
 | [associated person/institution](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P67)            | InformatieObject.verwijstNaar | [Naam geassocieerde persoon/instelling](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Naam_geassocieerde_persoon_of_instelling) |
 | [associated subject](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P129)                     | InformatieObject.gaatOver     | [Naam geassocieerd concept](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Naam_geassocieerd_concept)                            |
 | [associated period](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P67)                       | InformatieObject.verwijstNaar | Naam geassocieerde periode                                                                                                                         |
+|[inscription](http://www.cidoc-crm.org/html/5.0.4/cidoc-crm.html#P128)|MensgemaaktObject.draagt|[inscriptie.inhoud](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Inhoud_opschrift)|
+|[materials](http://www.cidoc-crm.org/html/5.0.4/cidoc-crm.html#P45)|MensgemaaktObject.materiaal.label|[term materiaal](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Term_materiaal)|
+|measurements|Dimensie.waarde|[afmeting.waarde](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Waarde_afmeting)|
+|unit of measurement|Dimensie.eenheid|[afmeting.eenheid](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Eenheid_afmeting)|
+
 
 ## Published Collections
 
