@@ -47,74 +47,26 @@ The [House of Alijn](https://huisvanalijn.be) is a museum about everyday life. I
 
 ## Published Collections
 
-The event stream currently contains **10.038 records** from the collection of **Huis van Alijn**. 
-The event stream of Huis van Alijn consists of the following **media**:
+The event stream of Huis van Alijn consists of the following **media**. To obtain only certain media, filter on objectnumber:
 
-| **MEDIA**              | **OBJECTNUMBER** | **#** |
-|------------------------|------------------|-------|
-| **Objects**            | JJJJ-XXX-XXX     | 1.773 |
-| **Digital Collection** |                  | 4.822 |
-| - Photographs          | FO- or DIA-      | 2.873 |
-| - Videos               | F0- or VI-       |  147  |
-| - Audio                | AU-              |  197  |
-| - Digital Born         | DB-              |   0   |
-| **Documents**          | JJJJ-XXX-XXX     | 2.917 |
-| - Advertisements       | RE-              |  106  |
-| - Posters              | AF-              |  15   |
-| **Photographs**        | JJJJ-XXX-XXX     |  526  |
+| **MEDIA**              | **OBJECTNUMBER** | 
+|------------------------|------------------|
+| **Objects**            | JJJJ-XXX-XXX     |
+| **Digital Collection** |                  |
+| - Photographs          | FO- or DIA-      |
+| - Videos               | F0- or VI-       |
+| - Audio                | AU-              |
+| - Digital Born         | DB-              |
+| **Documents**          | JJJJ-XXX-XXX     |
+| - Advertisements       | RE-              |
+| - Posters              | AF-              |
+| **Photographs**        | JJJJ-XXX-XXX     |
 
-They are divided among the following **collections**:
-- Important stages in life
-- Jearly rituals and traditions
-- Leisure
-- Daily life
-
-| **Stage in life**             |       |
-|-------------------------------|-------|
-| geboorte (*birth*)            | 244   |
-| onderwijs (*education*)       | 371   |
-| communie (*rites of passage*) | 203   |
-| huwelijk (*marriage*)         | 406   |
-| dood/rouw (*death*)           | 81    |
-
-
-| **Rituals & traditions**                 |       |
-|------------------------------------------|-------|
-| nieuwjaardag (*New Year*)                | 236   |
-| Pasen (*Easter*)                         | 104   |
-| carnaval (*carnaval*)                    | 30    |
-| valentijnsdag (*valentine*)              | 141   |
-| 1 april (*Aprils fools*)                 | 28    |
-| moederdag (*motherday*)                  | 11    |
-| vaderdag (*fatherday*)                   | 17    |
-| Kerstmis (*Christmas*)                   | 114   |
-| Drie Koningen (*Epiphany*)               | 6     |
-| Sinterklaas                              | 277   |
-| verjaardag (*birthday*)                  | 64    |
-| ...                                      | ...   |
-
- 
-| **Leisure**                        |       |
-|------------------------------------|-------|
-| circus                             | 2.152 |
-| poppenspel (*puppetry*)            | 85    |
-| optocht (*parades & processions*)  | 194   |
-| kermis (*fairs*)                   | 299   |
-| zesdaagse (*cycling*)              | 62    |
-| vakantie (*holiday*)               | 607   |
-| ...                                | ...   |
-
-
-| **Daily life**                     |       |
-|------------------------------------|-------|
-| lichaamsverzorging                 | 82    |
-| huishouden                         | 323   |
-| rook                               | 86    |
-| speelgoed (*toys*)                 | 1036  |
-| huisdier (*pets*)                  | 123   |
-| voeding (*food*)                   | 1.264 |
-| vervoer (*transportation*)         | 305   |
-| ...                                | ...   |
+The objects are divided among the following **collections**. You can search through these collections by filtering on [associated subject](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P129). 
+- **Important stages in life**: geboorte (*birth*), onderwijs (*education*), communie (*rites of passage*), huwelijk (*marriage*), dood/rouw (*death*)  
+- **Jearly rituals and traditions**: nieuwjaardag (*New Year*), Pasen (*Easter*), carnaval (*carnaval*), valentijnsdag (*valentine*), 1 april (*Aprils fools*), moederdag (*motherday*), vaderdag (*fatherday*), Kerstmis (*Christmas*), Drie Koningen (*Epiphany*), Sinterklaas, verjaardag (*birthday*), ...
+- **Leisure**: circus, poppenspel (*puppetry*), optocht (*parades & processions*), kermis (*fairs*), zesdaagse (*cycling*), vakantie (*holiday*), sport, ...
+- **Other aspects of daily life**: lichaamsverzorging, huishouden, rook, speelgoed (*toys*), huisdier (*pets*), voeding (*food*), vervoer (*transportation*), ...
   
 ## LDES
 
