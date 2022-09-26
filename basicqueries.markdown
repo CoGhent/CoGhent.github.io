@@ -20,7 +20,7 @@ Use SELECT to define which data you want to have returned with your query.
 
 *for example*
 
-This query will return the first 1.000 titles of objects that are published in the linked data event streams from the five participating cultural heritage institutions.
+*This query will return the first 1.000 titles of objects that are published in the linked data event streams from the five participating cultural heritage institutions.*
 
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
