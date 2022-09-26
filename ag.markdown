@@ -5,8 +5,24 @@ parent: LDES
 nav_order: 5
 ---
 
+# **Archief Gent** 
 
-## **Archief Gent** 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+## General introduction
+
+
+## Published Metadata
+
+
+## Published Collections
 
 The mapping of the available metadata in this event stream can be found [here](https://app.gitbook.com/o/-MaDy7qNCF9HTgoNJPP6/s/-MaDyFunOfBA0nHUQZv_/datamappings/overzicht-velden-datamapping).
 Event stream containing objects from the collection of Archief Gent:
