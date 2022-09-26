@@ -8,7 +8,7 @@ nav_order: 1
 
 # LDES (Linked Data Event Stream)
 
-Collections of Ghent publisched multiple Linked Data Event streams containing information on objects from five cultural heritage organizations located in the city of Ghent: 
+Collections of Ghent published multiple Linked Data Event streams containing information on objects from five cultural heritage organizations located in the city of Ghent: 
 - Design Museum Gent
 - Huis van Alijn
 - Industriemuseum
