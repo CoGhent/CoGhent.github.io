@@ -19,6 +19,7 @@ nav_order: 3
 Use SELECT to define which data you want to have returned with your query. 
 
 *for example*
+This query will return the first 1.000 titles of objects that are published in the linked data event streams from the five participating cultural heritage institutions.
 
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
@@ -28,6 +29,20 @@ WHERE {
   ?record cidoc:P102_has_title ?title.
 } 
 ```
+
+To get the results from only one heritage institution, specify which linked data eventstream you want to query using FROM.
+
+*for example*
+```
+PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT ?title FROM <http://stad.gent/ldes/hva> 
+WHERE { 
+  ?record cidoc:P102_has_title ?title.
+}
+```
+
+
 
 ## count
 
