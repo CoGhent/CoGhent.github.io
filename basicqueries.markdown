@@ -26,7 +26,7 @@ PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
 SELECT ?title
 WHERE { 
   ?record cidoc:P102_has_title ?title.
-} ![image](https://user-images.githubusercontent.com/78723853/192247528-a1144076-3b6d-4af5-8cb9-b36b39393354.png)
+} 
 ```
 
 ## count
@@ -56,7 +56,7 @@ WHERE {
   ?object cidoc:P108i_was_produced_by ?vervaardiging .
   ?vervaardiging cidoc:P14_carried_out_by ?maker .
   {?maker la:equivalent <https://stad.gent/id/agent/670003618> } UNION {?maker la:equivalent <https://stad.gent/id/agent/570025558>} .
-} LIMIT 100!
+} LIMIT 100
 ```
 
 ## pagination
@@ -86,5 +86,5 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
      } ORDER BY DESC(?versie)
   }
 LIMIT 1000
-OFFSET 1000!
+OFFSET 1000
 ```
