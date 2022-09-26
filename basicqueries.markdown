@@ -16,6 +16,34 @@ nav_order: 3
 
 ## select
 
+Use SELECT to define which data you want to have returned with your query. 
+
+*for example*
+This query will return the first 1.000 titles of objects that are published in the linked data event streams from the five participating cultural heritage institutions.
+
+```
+PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT ?title
+WHERE { 
+  ?record cidoc:P102_has_title ?title.
+} 
+```
+
+To get the results from only one heritage institution, specify which linked data eventstream you want to query using FROM.
+
+*for example*
+```
+PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT ?title FROM <http://stad.gent/ldes/hva> 
+WHERE { 
+  ?record cidoc:P102_has_title ?title.
+}
+```
+
+
+
 ## count
 
 ## filter
@@ -43,7 +71,7 @@ WHERE {
   ?object cidoc:P108i_was_produced_by ?vervaardiging .
   ?vervaardiging cidoc:P14_carried_out_by ?maker .
   {?maker la:equivalent <https://stad.gent/id/agent/670003618> } UNION {?maker la:equivalent <https://stad.gent/id/agent/570025558>} .
-} LIMIT 100!
+} LIMIT 100
 ```
 
 ## pagination
@@ -73,5 +101,5 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
      } ORDER BY DESC(?versie)
   }
 LIMIT 1000
-OFFSET 1000!
+OFFSET 1000
 ```

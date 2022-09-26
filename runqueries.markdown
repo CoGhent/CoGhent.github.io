@@ -49,6 +49,8 @@ WHERE {
 
 ## Virtuoso Stad Gent
 
+https://stad.gent/sparql
+
 # Run queries locally
 
 ## Comunica query engine
