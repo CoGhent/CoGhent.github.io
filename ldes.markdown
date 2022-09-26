@@ -8,6 +8,21 @@ nav_order: 1
 
 # LDES (Linked Data Event Stream)
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+## General
+
+
+
+## CoGent Linked Data Event Streams
+
 Collections of Ghent published multiple Linked Data Event streams containing information on objects from five cultural heritage organizations located in the city of Ghent: 
 - [Design Museum Gent](https://coghent.github.io/dmg.html)
 - [Huis van Alijn](https://coghent.github.io/hva.html)
