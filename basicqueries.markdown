@@ -51,6 +51,7 @@ WHERE {
 When querying for fields that are linked to thesaurus terms or persons and institutions from the agents list, the result will be a external link to the concept.
 
 *for example*
+
 *This query will return the first 1.000 links to objectnames that are published in the linked data event streams from het Huis van Alijn.*
 
 ```
@@ -66,6 +67,7 @@ WHERE {
 To obtain the label of the terms, use SKOS or RDFS. 
 
 *for example*
+
 *This query will return the first 1.000 labels of objectnames that are published in the linked data event streams from het Huis van Alijn.*
 
 
@@ -84,6 +86,7 @@ WHERE {
 In addition, it is also possible to query on specific terms or agents, using the link to the external thesauri
 
 *for example*
+
 *This query will return the collecting cards that are published in the linked data event streams from het Huis van Alijn.*
 
 ```
@@ -105,6 +108,7 @@ WHERE {
 Use FILTER to further specify your result.
 
 *for example*
+
 *This query will return all the titles that have the word 'Gent' in them that are published in the linked data event streams from het Huis van Alijn.*
 
 ```
