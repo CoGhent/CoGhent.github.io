@@ -34,6 +34,7 @@ WHERE {
 To get the results from only one heritage institution, specify which linked data eventstream you want to query using FROM.
 
 *for example*
+
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
 
@@ -101,6 +102,7 @@ WHERE {
 ## union
 
 To query on multiple endpoint, it suffices to add the endpoints to the query.
+
 *for example*
 
 ```
