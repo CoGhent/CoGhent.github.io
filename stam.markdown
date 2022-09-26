@@ -39,6 +39,7 @@ nav_order: 4
 
 ## Published Collections
 
+
 [The collection of STAM](https://stamgent.be/en/collection) embodies Ghentian cultural heritage and focuses on the physical appearance of the city and city life in general. Therefore, the collection has a wide and diverse array of objects that are, each in their own way, related to Ghent. A selection of the event stream containing objects from the collection of STAM - Ghent City museum:
 -	Cityscapes: painted and drawn scenes of Ghent, from the 16th century until today, that illustrate the transformation of the city
 -	Collection Spruyt: Ghentian doctor Adolphe Spruyt gifted his Chinese collection of pottery, porcelain, furniture, textiles and paintings to the museum. The collection comprises objects from the seventh to the nineteenth centuries, as well as several items from the Han dynasty.
@@ -46,4 +47,4 @@ nav_order: 4
 -	Stained glass: some 300 small stained-glass windows from which the majority date from the sixteenth century
 -	City photography: STAM commissioned several photographers to portray Ghent in all its facets. Photographers include Karin Borghouts, Sanne De Wilde and Ives Maes.
 
-link: https://apidg.gent.be/opendata/adlib2eventstream/v1/stam/objecten
+link: [https://apidg.gent.be/opendata/adlib2eventstream/v1/stam/objecten](https://apidg.gent.be/opendata/adlib2eventstream/v1/stam/objecten)
