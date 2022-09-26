@@ -5,7 +5,8 @@ permalink: /IIIF Manifests/
 nav_order: 4
 ---
 
-## **IIIF Manifests** 
+# **IIIF Manifests** 
+
 
 Images of published objects from the 5 cultural heritage organisations and their corresponding technical metadata are published as IIIF manifests. 
 
