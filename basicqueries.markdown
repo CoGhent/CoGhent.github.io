@@ -123,9 +123,25 @@ WHERE {
 
 ## Bind
 
-## Distinct
+## Distinct & Order by
 
-## Order by
+Because of the specifications of a linked data event stream, multiple versions of records can be present. When metadata changes, the linked data event stream will publish a new version of a record, but an older version of the record still remains. To obtain solely the latest version of records, use ORDER BY to order the records chronologically (most recent versions first) and DISTINCT (to drop the following versions).
+
+*for example*
+
+*this query returns the first 1.000 records of the event stream of het Huis van Alijn. It orders the records on publishing date. Second, it keeps only the first priref and drops any possible older versions.*
+
+```
+PREFIX purl: <http://purl.org/dc/terms/>
+
+SELECT DISTINCT ?priref
+WHERE {
+SELECT ?object ?priref FROM <http://stad.gent/ldes/hva>
+WHERE { 
+?object purl:isVersionOf ?priref.
+} ORDER BY DESC(?versie)
+}
+```
 
 ## Union
 
