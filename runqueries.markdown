@@ -36,7 +36,7 @@ Installing the Comunica query engine, you can sparql locally using javascript an
 
 ## SparQL Wrapper
 
-To sparql query in python code, the package SPARQLWrapper can be used. Documentation can be found [here](https://sparqlwrapper.readthedocs.io/en/latest/main.html). 
+To sparql query with python, the package SPARQLWrapper can be used. Documentation can be found [here](https://sparqlwrapper.readthedocs.io/en/latest/main.html). 
 
 *for example*
 
@@ -64,3 +64,25 @@ except Exception as e:
 
 ## pyLoDStorage
 
+Another method to sparql with python is the library [pyLODStorage](https://github.com/WolfgangFahl/pyLoDStorage). It is possible to store the results directly into a pandas dataframe.
+
+*for example*
+
+```
+querylist.append("""
+    PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
+
+    SELECT ?title
+    WHERE { 
+      ?object cidoc:P102_has_title ?title.
+    } 
+    """)
+
+df_sparql = pd.DataFrame()
+sparqlQuery = query
+sparql = SPARQL("https://stad.gent/sparql")
+qlod = sparql.queryAsListOfDicts(sparqlQuery)
+csv = CSV.toCSV(qlod)
+df_result = pd.DataFrame([x.split(',') for x in csv.split('\n')])
+df_sparql = df_sparql.append(df_result, ignore_index=True)
+```
