@@ -42,7 +42,7 @@ To get the results from only one heritage institution, specify which linked data
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
 
-SELECT DISTINCT ?title FROM <http://stad.gent/ldes/hva> 
+SELECT ?title FROM <http://stad.gent/ldes/hva> 
 WHERE { 
   ?object cidoc:P102_has_title ?title.
 }
@@ -54,7 +54,7 @@ When querying for fields that are linked to thesaurus terms or persons and insti
 
 *for example*
 
-*This query will return the first 1.000 links to DISTINCT objectnames that are published in the event stream from het Huis van Alijn.*
+*This query will return the first 1.000 links to objectnames that are published in the event stream from het Huis van Alijn.*
 
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
@@ -72,14 +72,14 @@ To obtain the label of the terms, use SKOS or RDFS.
 
 *for example*
 
-*This query will return the first 1.000 DISTINCT labels of objectnames that are published in the event stream by CoGhent.*
+*This query will return the first 1.000 labels of objectnames that are published in the event stream by CoGhent.*
 
 
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-SELECT DISTINCT ?label 
+SELECT ?label 
 WHERE { 
   ?object cidoc:P41i_was_classified_by ?identifier.
   ?identifier cidoc:P42_assigned ?objectname.
@@ -109,6 +109,22 @@ WHERE {
 [try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0A%0ASELECT%20%3Ftitle%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP102_has_title%20%3Ftitle.%0A%20%20%3Fobject%20cidoc%3AP41i_was_classified_by%20%3Fidentifier.%0A%20%20%23%23%20look%20up%20by%20concept%20in%20AAT.%0A%20%20%3Fidentifier%20cidoc%3AP42_assigned%20%3Chttp%3A%2F%2Fvocab.getty.edu%2Faat%2F300192646%3E.%0A%7D%0A&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
 
 ## Count
+
+*for example*
+
+*This query returns the number of titles that are published in the event stream of het Huis van Alijn.*
+
+```
+PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT COUNT(?title)
+WHERE{
+SELECT ?title FROM <http://stad.gent/ldes/hva> 
+WHERE { 
+  ?object cidoc:P102_has_title ?title.
+}
+}
+```
 
 ## Filter
 
