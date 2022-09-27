@@ -29,7 +29,7 @@ PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
 
 SELECT ?title
 WHERE { 
-  ?record cidoc:P102_has_title ?title.
+  ?object cidoc:P102_has_title ?title.
 } 
 ```
 
@@ -44,7 +44,7 @@ PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
 
 SELECT ?title FROM <http://stad.gent/ldes/hva> 
 WHERE { 
-  ?record cidoc:P102_has_title ?title.
+  ?object cidoc:P102_has_title ?title.
 }
 ```
 
@@ -57,10 +57,10 @@ When querying for fields that are linked to thesaurus terms or persons and insti
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
 
-SELECT ?ojectnaam FROM <http://stad.gent/ldes/hva> 
+SELECT ?objectname FROM <http://stad.gent/ldes/hva> 
 WHERE { 
-  ?record cidoc:P41i_was_classified_by ?identifier.
-  ?identifier cidoc:P42_assigned ?ojectnaam.
+  ?object cidoc:P41i_was_classified_by ?identifier.
+  ?identifier cidoc:P42_assigned ?objectname.
 } 
 ```
 
@@ -77,9 +77,9 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT ?label FROM <http://stad.gent/ldes/hva> 
 WHERE { 
-  ?record cidoc:P41i_was_classified_by ?identifier.
-  ?identifier cidoc:P42_assigned ?objectnaam.
-  ?objectnaam skos:prefLabel ?label
+  ?object cidoc:P41i_was_classified_by ?identifier.
+  ?identifier cidoc:P42_assigned ?objectname.
+  ?objectname skos:prefLabel ?label
 }
 ```
 
@@ -95,8 +95,8 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT ?record ?title FROM <http://stad.gent/ldes/hva> 
 WHERE { 
-  ?record cidoc:P102_has_title ?title.
-  ?record cidoc:P41i_was_classified_by ?identifier.
+  ?object cidoc:P102_has_title ?title.
+  ?object cidoc:P41i_was_classified_by ?identifier.
   ?identifier cidoc:P42_assigned <http://vocab.getty.edu/aat/300192646>.
 }
 ```
@@ -117,7 +117,7 @@ PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
 SELECT ?title 
 FROM <http://stad.gent/ldes/hva> 
 WHERE { 
-  ?start cidoc:P102_has_title ?title.
+  ?object cidoc:P102_has_title ?title.
   FILTER (regex(?title, "Gent", "i"))
 } 
 ```
@@ -141,7 +141,7 @@ SELECT ?title
 FROM <http://stad.gent/ldes/hva> 
 FROM <http://stad.gent/ldes/dmg> 
 WHERE { 
-  ?start cidoc:P102_has_title ?title.
+  ?object cidoc:P102_has_title ?title.
 } 
 ```
 
