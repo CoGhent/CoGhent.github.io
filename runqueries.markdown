@@ -69,6 +69,10 @@ Another method to sparql with python is the library [pyLODStorage](https://githu
 *for example*
 
 ```
+from lodstorage.sparql import SPARQL
+from lodstorage.csv import CSV
+import pandas as pd
+
 querylist.append("""
     PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
 
