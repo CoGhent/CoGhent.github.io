@@ -186,11 +186,11 @@ WHERE {
 
 ## pagination
 
-the SparQL endpoint limits results to 1.000 lines. If a query has more than 1.000 results, multiple queries *(each containing the next 1.000 results)*, using OFFSET and LIMIT, are necessary to obtain the entire result. 
+the SparQL endpoint limits results to 1.000 lines. If a query has more than 1.000 results, multiple queries *(each containing the next 1.000 results)*, using OFFSET and LIMIT, are necessary to obtain the entire result. You will always need to count how many results your query gives first, to know how many pages to query.
 
 *for example*
 
-*This query gets skips the first 1.000 results to return the next 1.000 results. It returns the unique records with subject circus from the collection of het Huis van Alijn.*
+*This query gets skips the first 1.000 results to return the next 1.000 results. It returns the records with subject circus from the collection of het Huis van Alijn.*
 
 ```  
 PREFIX purl: <http://purl.org/dc/terms/>
