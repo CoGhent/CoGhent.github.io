@@ -175,7 +175,7 @@ the SparQL endpoint limits results to 1.000 lines. If a query has more than 1.00
 
 *for example*
 
-*This query gets skips the first 1.000 results to return the next 1.000 results. It returns the unique records with subject circus from the collection of het Huis van Alijn.
+*This query gets skips the first 1.000 results to return the next 1.000 results. It returns the unique records with subject circus from the collection of het Huis van Alijn.*
 
 ```  
 PREFIX purl: <http://purl.org/dc/terms/>
