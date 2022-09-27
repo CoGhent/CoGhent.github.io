@@ -184,9 +184,9 @@ WHERE {
 } LIMIT 100
 ```
 
-## pagination
+## Pagination
 
-the SparQL endpoint limits results to 1.000 lines. If a query has more than 1.000 results, multiple queries *(each containing the next 1.000 results)*, using OFFSET and LIMIT, are necessary to obtain the entire result. You will always need to count how many results your query gives first, to know how many pages to query.
+the SparQL endpoint limits results to 1.000 lines. If a query has more than 1.000 results, multiple queries *(each containing the next 1.000 results)*, using OFFSET and LIMIT, are necessary to obtain the entire result. You will need to count (see above) how many results your query gives first, to know how many pages to query.
 
 *for example*
 
