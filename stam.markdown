@@ -35,7 +35,9 @@ nav_order: 4
 | [place of creation](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P7)                        | Gebeurtenis.plaats            | [Naam plaats vervaardiging](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Naam_plaats_vervaardiging)                            |
 | [time of creation - start](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P4)                 | Gebeurtenis.tijd              | [Begindatum](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Begindatum)                                                          |
 | [time of creation - start - precision](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P4)     | Gebeurtenis.tijd              | [Precisie begindatum](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Precisie_begindatum)                                        |
-| [time of creation - end](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P4)                   | Gebeurtenis.tijd              | [Einddatum](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Einddatum)                                                            | 
+| [time of creation](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P4)                   | Gebeurtenis.tijd              | [Periode](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Periode)                                                            |
+| [material](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P45)                   | MensgemaaktObject.materiaal           | [Materiaal](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Element/Materiaal)                                                            | 
+| [technique](https://cidoc-crm.org/html/cidoc_crm_v7.1.1.html#P32)                 | Activiteit.gebruikteTechniek       | [Techniek](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Element/Techniek)                                                          | 
 
 ## Published Collections
 
