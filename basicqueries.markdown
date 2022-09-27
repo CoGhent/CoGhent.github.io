@@ -131,6 +131,24 @@ WHERE {
 
 ## Bind
 
+To manipulate the data in your query, BIND can be used.
+
+*for example*
+
+*this query returns the first 100 records with 'Gent' in the title of the event stream of het Huis van Alijn and replaces Gent with Ghent.*
+
+```
+PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT ?newtitle
+FROM <http://stad.gent/ldes/hva> 
+WHERE { 
+  ?object cidoc:P102_has_title ?title.
+  FILTER (regex(?title, "Gent", "i"))
+  BIND (URI(REPLACE(str(?title), "Gent", "Ghent")) AS ?newtitle).
+} LIMIT 100
+```
+
 ## Distinct & Order by
 
 Because of the specifications of a linked data event stream, multiple versions of records can be present. When metadata changes, the linked data event stream will publish a new version of a record, but an older version of the record still remains. To obtain solely the latest version of records, use ORDER BY to order the records chronologically (most recent versions first) and DISTINCT (to drop the following versions).
