@@ -37,22 +37,24 @@ To get the results from only one heritage institution, specify which linked data
 
 *for example*
 
-*This query will return the first 1.000 titles of objects that are published in the linked data event stream from het Huis van Alijn.*
+*This query will return the first distinct 1.000 titles of objects that are published in the linked data event stream from het Huis van Alijn.*
 
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
 
-SELECT ?title FROM <http://stad.gent/ldes/hva> 
+SELECT DISTINCT ?title FROM <http://stad.gent/ldes/hva> 
 WHERE { 
   ?object cidoc:P102_has_title ?title.
 }
 ```
 
+[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Ftitle%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP102_has_title%20%3Ftitle.%0A%7D%20&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
+
 When querying for fields that are linked to thesaurus terms or persons and institutions from the agents list, the result will be a external link to the concept.
 
 *for example*
 
-*This query will return the first 1.000 links to objectnames that are published in the event stream from het Huis van Alijn.*
+*This query will return the first 1.000 links to DISTINCT objectnames that are published in the event stream from het Huis van Alijn.*
 
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
@@ -64,18 +66,20 @@ WHERE {
 } 
 ```
 
+[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Ftitle%20FROM%20%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP102_has_title%20%3Ftitle.%0A%7D&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
+
 To obtain the label of the terms, use SKOS or RDFS. 
 
 *for example*
 
-*This query will return the first 1.000 labels of objectnames that are published in the event stream from het Huis van Alijn.*
+*This query will return the first 1.000 DISTINCT labels of objectnames that are published in the event stream by CoGhent.*
 
 
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-SELECT ?label FROM <http://stad.gent/ldes/hva> 
+SELECT DISTINCT ?label 
 WHERE { 
   ?object cidoc:P41i_was_classified_by ?identifier.
   ?identifier cidoc:P42_assigned ?objectname.
@@ -83,22 +87,26 @@ WHERE {
 }
 ```
 
+[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0APREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0A%0ASELECT%20DISTINCT%20%3Flabel%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP41i_was_classified_by%20%3Fidentifier.%0A%20%20%3Fidentifier%20cidoc%3AP42_assigned%20%3Fobjectname.%0A%20%20%3Fobjectname%20skos%3AprefLabel%20%3Flabel%0A%7D%0A&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
+
 In addition, it is also possible to query on specific terms or agents, using the link to the external thesauri
 
 *for example*
 
-*This query will return the collecting cards that are published in the event stream from het Huis van Alijn.*
+*This query will return the collecting cards that are published in the event streams.*
 
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
 
-SELECT ?record ?title FROM <http://stad.gent/ldes/hva> 
+SELECT ?record ?title
 WHERE { 
   ?object cidoc:P102_has_title ?title.
   ?object cidoc:P41i_was_classified_by ?identifier.
+  ## look up with concept from AAT describing playing cards
   ?identifier cidoc:P42_assigned <http://vocab.getty.edu/aat/300192646>.
 }
 ```
+[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0A%0ASELECT%20%3Ftitle%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP102_has_title%20%3Ftitle.%0A%20%20%3Fobject%20cidoc%3AP41i_was_classified_by%20%3Fidentifier.%0A%20%20%23%23%20look%20up%20by%20concept%20in%20AAT.%0A%20%20%3Fidentifier%20cidoc%3AP42_assigned%20%3Chttp%3A%2F%2Fvocab.getty.edu%2Faat%2F300192646%3E.%0A%7D%0A&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
 
 ## Count
 
