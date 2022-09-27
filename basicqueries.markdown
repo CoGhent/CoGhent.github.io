@@ -109,7 +109,7 @@ Use FILTER to further specify your result.
 
 *for example*
 
-*This query will return all the titles that have the word 'Gent' in them that are published in the event stream from het Huis van Alijn.*
+*This query will return objects with titles that have the word 'Gent' in them that are published in the event stream from het Huis van Alijn.*
 
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
