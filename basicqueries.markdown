@@ -164,7 +164,7 @@ However, when the query gets to complicated, it is better to use UNION.
 
 *for example*
 
-*this query returns 100 records with creator 'Joseph Buyens' from both the event streams of Industriemuseum en Archief Gent*
+*this query returns 100 records with creator 'Joseph Buyens' from both the event streams of Industriemuseum en Archief Gent.*
 
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
