@@ -91,7 +91,6 @@ In addition, it is also possible to query on specific terms or agents, using the
 
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT ?record ?title FROM <http://stad.gent/ldes/hva> 
 WHERE { 
