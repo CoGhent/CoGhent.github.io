@@ -21,6 +21,7 @@ nav_order: 1
 Design Museum Gent is the Design Museum in Ghent with a collection spanning from the fifteenth century to the present. Through collection presentations and temporary exhibitions, the museum wants to raise awareness about the impact of design on our daily lives. While the museum is currently closed during the building of a new wing "Ding" https://www.designmuseumgent.be/en/ding, Design Museum Gent keeps on sharing design through extra muros projects and the Collections of Ghent project.
 
 ## Published Metadata
+
 | CIDOC                                                                                          | OSLO                          | CEST                                                                                                                                                 |
 |------------------------------------------------------------------------------------------------|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [publishing institution](http://www.cidoc-crm.org/html/5.0.4/cidoc-crm.html#P50)               | MaterieelDing.Beheerder       | [Naam Bewaarinstelling](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Naam_bewaarinstelling)                                    |
@@ -33,7 +34,7 @@ Design Museum Gent is the Design Museum in Ghent with a collection spanning from
 | [place of creation](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P7)                        | Gebeurtenis.plaats            | [Naam plaats vervaardiging](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Naam_plaats_vervaardiging)                            |
 | [time of creation - start](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P4)                 | Gebeurtenis.tijd              | [Begindatum](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Begindatum)                                                          |
 | [time of creation - start - precision](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P4)     | Gebeurtenis.tijd              | [Precisie begindatum](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Precisie_begindatum)                                        |
-| [time of creation - end](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P4)                   | Gebeurtenis.tijd              | [Einddatum](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Einddatum)                                                            | 
+| [time of creation - end](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P4)                   | Gebeurtenis.tijd              | [Einddatum](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Einddatum)   
 
 + deelcollectie + materiaal + dimensie + materieelding.bestaatuit (onderdelen) + methode, plaats en datum van verwerving
 
@@ -48,7 +49,7 @@ They are divided among the following **collections** (MensgemaaktObject.maaktDee
 - Household electronics ("huishoudelijke apparaten"): mostly from the Belgian producer Nova
 - Objects from the 1960s and 1970s ("jaren 1960" & "jaren 1970"): furniture, tableware, artworks, textiles, ... made in the 60s and 70s
 - Italian postmodernism ("Italiaans postmodernisme"): many objects designed in the 1980s for Alessi, Memphis, ...
-- Objects from particular designers ("Bořek Šípek", "Axel Enthoven", "Maarten Van Severen")
+- Objects from particular designers ("Bořek Šípek", "Axel Enthoven", "Maarten Van Severen", "Piet Stockmans")
 
 Art Nouveau and Art Deco objects are also published (with images) but these are not part of a named collection. They can be identified through the object number: objects starting with FH (Fonds Havermans) and most of the objects acquired in 1987 (object number starts with 1987-.
 
