@@ -49,7 +49,7 @@ nav_order: 3
 
 ## Published Collections
 
-The event stream currently contains **8.792 records** from the collection of het **Industriemuseum**. The mapping of the available metadata in this event stream can be found [here](https://app.gitbook.com/o/-MaDy7qNCF9HTgoNJPP6/s/-MaDyFunOfBA0nHUQZv_/datamappings/overzicht-velden-datamapping).
+The event stream currently contains **16.573 records** from the collection of het **Industriemuseum**. The mapping of the available metadata in this event stream can be found [here](https://app.gitbook.com/o/-MaDy7qNCF9HTgoNJPP6/s/-MaDyFunOfBA0nHUQZv_/datamappings/overzicht-velden-datamapping).
 Event stream containing objects from the collection of Industriemuseum.
 
 The event stream of Industriemuseum consists of the following **media**:
