@@ -1,6 +1,6 @@
 ---
 layout: page
-title: NPM Client
+title: ldes-client
 parent: API
 nav_order: 2
 ---
