@@ -192,6 +192,8 @@ WHERE {
 }
 ```
 
+[try live](https://stad.gent/sparql?default-graph-uri=&query=PREFIX+purl%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fpriref%0D%0AWHERE+%7B%0D%0ASELECT+%3Fobject+%3Fpriref%0D%0AWHERE+%7B+%0D%0A%3Fobject+purl%3AisVersionOf+%3Fpriref.%0D%0A%7D+ORDER+BY+DESC%28%3Fobject%29%0D%0A%7D&format=text%2Fhtml&should-sponge=&timeout=0&signal_void=on)
+
 ## Random
 
 You can randomize your result.
