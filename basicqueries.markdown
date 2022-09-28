@@ -165,11 +165,11 @@ FROM <http://stad.gent/ldes/hva>
 WHERE { 
   ?object cidoc:P102_has_title ?title.
   FILTER (regex(?title, "Gent", "i"))
-  BIND (REPLACE(str(?title), "Gent", "Ghent")) AS ?newtitle).
+  BIND (REPLACE(str(?title), "Gent", "Ghent") AS ?newtitle).
 } LIMIT 100
 ```
 
-[try live]([https://stad.gent/sparql?default-graph-uri=&query=PREFIX+cidoc%3A+%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0D%0A%0D%0ASELECT+%3Fnewtitle%0D%0AFROM+%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E+%0D%0AWHERE+%7B+%0D%0A++%3Fobject+cidoc%3AP102_has_title+%3Ftitle.%0D%0A++FILTER+%28regex%28%3Ftitle%2C+%22Gent%22%2C+%22i%22%29%29%0D%0A++BIND+%28URI%28REPLACE%28str%28%3Ftitle%29%2C+%22Gent%22%2C+%22Ghent%22%29%29+AS+%3Fnewtitle%29.%0D%0A%7D+LIMIT+100&format=text%2Fhtml&should-sponge=&timeout=0&signal_void=on](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0A%0ASELECT%20%3Fnewtitle%0AFROM%20%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP102_has_title%20%3Ftitle.%0A%20%20FILTER%20(regex(%3Ftitle%2C%20%22Gent%22%2C%20%22i%22))%0A%20%20BIND%20((REPLACE(str(%3Ftitle)%2C%20%22Gent%22%2C%20%22Ghent%22))%20AS%20%3Fnewtitle).%0A%7D%20LIMIT%20100&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F))
+[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0A%0ASELECT%20%3Fnewtitle%0AFROM%20%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP102_has_title%20%3Ftitle.%0A%20%20FILTER%20(regex(%3Ftitle%2C%20%22Gent%22%2C%20%22i%22))%0A%20%20BIND(REPLACE(str(%3Ftitle)%2C%20%22Gent%22%2C%20%22Ghent%22)%20AS%20%3Fnewtitle).%0A%7D%20LIMIT%20100&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
 
 
 ## Distinct & Order by
