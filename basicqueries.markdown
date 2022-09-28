@@ -189,6 +189,26 @@ WHERE {
 }
 ```
 
+## Random
+
+You can randomize your result.
+
+*for example*
+
+*this query returns one random IIIF manifest from the CoGent event streams.*
+
+```
+PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT ?o WHERE {
+  ?s cidoc:P129i_is_subject_of ?o .
+  BIND(RAND() AS ?random) .
+} ORDER BY ?random
+LIMIT 1
+```
+
+The [Cogent Random Image Viewer](https://github.com/CoGhent/random_image_viewer), for example, makes use of above query.
+
 ## Union
 
 To query multiple endpoint, it suffices to add the extra endpoint to the query.
