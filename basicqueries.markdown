@@ -169,7 +169,7 @@ WHERE {
 } LIMIT 100
 ```
 
-[try live] (https://stad.gent/sparql?default-graph-uri=&query=PREFIX+cidoc%3A+%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0D%0A%0D%0ASELECT+%3Fnewtitle%0D%0AFROM+%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E+%0D%0AWHERE+%7B+%0D%0A++%3Fobject+cidoc%3AP102_has_title+%3Ftitle.%0D%0A++FILTER+%28regex%28%3Ftitle%2C+%22Gent%22%2C+%22i%22%29%29%0D%0A++BIND+%28URI%28REPLACE%28str%28%3Ftitle%29%2C+%22Gent%22%2C+%22Ghent%22%29%29+AS+%3Fnewtitle%29.%0D%0A%7D+LIMIT+100&format=text%2Fhtml&should-sponge=&timeout=0&signal_void=on)
+[try live](https://stad.gent/sparql?default-graph-uri=&query=PREFIX+cidoc%3A+%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0D%0A%0D%0ASELECT+%3Fnewtitle%0D%0AFROM+%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E+%0D%0AWHERE+%7B+%0D%0A++%3Fobject+cidoc%3AP102_has_title+%3Ftitle.%0D%0A++FILTER+%28regex%28%3Ftitle%2C+%22Gent%22%2C+%22i%22%29%29%0D%0A++BIND+%28URI%28REPLACE%28str%28%3Ftitle%29%2C+%22Gent%22%2C+%22Ghent%22%29%29+AS+%3Fnewtitle%29.%0D%0A%7D+LIMIT+100&format=text%2Fhtml&should-sponge=&timeout=0&signal_void=on)
 
 
 ## Distinct & Order by
