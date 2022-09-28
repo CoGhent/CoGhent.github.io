@@ -56,25 +56,25 @@ When querying for fields that are linked to thesaurus terms or persons and insti
 
 *for example*
 
-*This query will return the first 1.000 links to objectnames that are published in the event stream from het Huis van Alijn.*
+*This query will return the first 1.000 links to objectnames that are published in the CoGhent event streams.*
 
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
 
-SELECT ?objectname FROM <http://stad.gent/ldes/hva> 
+SELECT ?objectname 
 WHERE { 
   ?object cidoc:P41i_was_classified_by ?identifier.
   ?identifier cidoc:P42_assigned ?objectname.
 } 
 ```
 
-[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0A%0ASELECT%20%3Fobjectname%20FROM%20%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP41i_was_classified_by%20%3Fidentifier.%0A%20%20%3Fidentifier%20cidoc%3AP42_assigned%20%3Fobjectname.%0A%7D%20&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
+[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0A%0ASELECT%20%3Fobjectname%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP41i_was_classified_by%20%3Fidentifier.%0A%20%20%3Fidentifier%20cidoc%3AP42_assigned%20%3Fobjectname.%0A%7D%20&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
 
 To obtain the label of the terms, use SKOS or RDFS. 
 
 *for example*
 
-*This query will return the first 1.000 labels of objectnames that are published in the event stream by CoGhent.*
+*This query will return the first 1.000 labels of objectnames that are published in the CoGhent event streams.*
 
 
 ```
@@ -95,7 +95,7 @@ In addition, it is also possible to query on specific terms or agents, using the
 
 *for example*
 
-*This query will return the collecting cards that are published in the event streams.*
+*This query will return the records with objectname collecting card that are published in the event streams.*
 
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
@@ -169,20 +169,23 @@ WHERE {
 } LIMIT 100
 ```
 
+[try live] (https://stad.gent/sparql?default-graph-uri=&query=PREFIX+cidoc%3A+%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0D%0A%0D%0ASELECT+%3Fnewtitle%0D%0AFROM+%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E+%0D%0AWHERE+%7B+%0D%0A++%3Fobject+cidoc%3AP102_has_title+%3Ftitle.%0D%0A++FILTER+%28regex%28%3Ftitle%2C+%22Gent%22%2C+%22i%22%29%29%0D%0A++BIND+%28URI%28REPLACE%28str%28%3Ftitle%29%2C+%22Gent%22%2C+%22Ghent%22%29%29+AS+%3Fnewtitle%29.%0D%0A%7D+LIMIT+100&format=text%2Fhtml&should-sponge=&timeout=0&signal_void=on)
+
+
 ## Distinct & Order by
 
 Because of the specifications of a linked data event stream, multiple versions of records can be present. When metadata changes, the linked data event stream will publish a new version of a record, but an older version of the record still remains. To obtain solely the latest version of records, use ORDER BY to order the records chronologically (most recent versions first) and DISTINCT (to drop the following versions).
 
 *for example*
 
-*this query returns the first 1.000 records of the event stream of het Huis van Alijn. It orders the records on publishing date. Second, it keeps only the first priref and drops any possible older versions.*
+*this query returns the first 1.000 records of the CoGhent event streams. It orders the records on publishing date. Second, it keeps only the first priref and drops any possible older versions.*
 
 ```
 PREFIX purl: <http://purl.org/dc/terms/>
 
 SELECT DISTINCT ?priref
 WHERE {
-SELECT ?object ?priref FROM <http://stad.gent/ldes/hva>
+SELECT ?object ?priref
 WHERE { 
 ?object purl:isVersionOf ?priref.
 } ORDER BY DESC(?object)
@@ -195,7 +198,7 @@ You can randomize your result.
 
 *for example*
 
-*this query returns one random IIIF manifest from the CoGent event streams.*
+*this query returns one random IIIF manifest from the CoGhent event streams.*
 
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
@@ -209,11 +212,11 @@ LIMIT 1
 
 [try live](https://stad.gent/sparql?default-graph-uri=&query=PREFIX+cidoc%3A+%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0D%0A%0D%0ASELECT+%3Fo+WHERE+%7B%0D%0A++%3Fs+cidoc%3AP129i_is_subject_of+%3Fo+.%0D%0A++BIND%28RAND%28%29+AS+%3Frandom%29+.%0D%0A%7D+ORDER+BY+%3Frandom%0D%0ALIMIT+1&format=text%2Fhtml&should-sponge=&timeout=0&signal_void=on)
 
-The [Cogent Random Image Viewer](https://github.com/CoGhent/random_image_viewer), for example, makes use of above query.
+The [Coghent Random Image Viewer](https://github.com/CoGhent/random_image_viewer), for example, makes use of above query.
 
 ## Union
 
-To query multiple endpoint, it suffices to add the extra endpoint to the query.
+To query multiple endpoint instead of all, it suffices to add the extra endpoint to the query.
 
 *for example*
 
@@ -285,3 +288,5 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 LIMIT 1000
 OFFSET 1000
 ```
+
+[try live](https://stad.gent/sparql?default-graph-uri=&query=PREFIX+purl%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0APREFIX+cidoc%3A+%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0D%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0D%0A%0D%0A+++SELECT+DISTINCT+%3Fpriref+%3Flabel%0D%0A+++WHERE+%7B%0D%0A+++++SELECT+%3Fobject+%3Fpriref+%3Flabel+FROM+%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E%0D%0A+++++WHERE+%7B+%0D%0A+++++%0D%0A+++++++%3Fobject+purl%3AisVersionOf+%3Fpriref.%0D%0A+++++++%3Fobject+cidoc%3AP128_carries+%3Fcarries.%0D%0A+++++++%3Fcarries+cidoc%3AP129_is_about+%3Fabout.%0D%0A+++++++%3Fabout+cidoc%3AP2_has_type+%3Ftype.%0D%0A+++++++%3Ftype+skos%3AprefLabel+%3Flabel.%0D%0A%0D%0A+++++++FILTER+%28regex%28%3Flabel%2C+%22%5Ecircus%24%22%2C+%22i%22%29%29%0D%0A%0D%0A+++++%7D+ORDER+BY+DESC%28%3Fobject%29%0D%0A++%7D%0D%0ALIMIT+1000%0D%0AOFFSET+1000&format=text%2Fhtml&should-sponge=&timeout=0&signal_void=on)
