@@ -95,7 +95,7 @@ In addition, it is also possible to query on specific terms or agents, using the
 
 *for example*
 
-*This query will return the records with objectname collecting card that are published in the event streams.*
+*This query will return the records with objectname collecting card that are published in the CoGhent event streams.*
 
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
@@ -220,6 +220,8 @@ To query multiple endpoint instead of all, it suffices to add the extra endpoint
 
 *for example*
 
+*this query returns the first 1.000 titles from the event streams from Design Museum Gent and het Huis van Alijn.*
+
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
 
@@ -236,7 +238,7 @@ However, when the query gets to complicated, it is better to use UNION.
 
 *for example*
 
-*this query returns 100 records with creator 'Joseph Buyens' from both the event streams of Industriemuseum en Archief Gent.*
+*this query returns 100 records with creator 'Joseph Buyens' from the event streams of het Industriemuseum en Archief Gent.*
 
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
