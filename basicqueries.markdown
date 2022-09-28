@@ -33,6 +33,8 @@ WHERE {
 } 
 ```
 
+[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0A%0ASELECT%20%3Ftitle%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP102_has_title%20%3Ftitle.%0A%7D%20%0A&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
+
 To get the results from only one heritage institution, specify which linked data eventstream you want to query using FROM.
 
 *for example*
@@ -48,7 +50,7 @@ WHERE {
 }
 ```
 
-[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Ftitle%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP102_has_title%20%3Ftitle.%0A%7D%20&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
+[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0A%0ASELECT%20%3Ftitle%20FROM%20%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP102_has_title%20%3Ftitle.%0A%7D&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
 
 When querying for fields that are linked to thesaurus terms or persons and institutions from the agents list, the result will be a external link to the concept.
 
@@ -66,7 +68,7 @@ WHERE {
 } 
 ```
 
-[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Ftitle%20FROM%20%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP102_has_title%20%3Ftitle.%0A%7D&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
+[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0A%0ASELECT%20%3Fobjectname%20FROM%20%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP41i_was_classified_by%20%3Fidentifier.%0A%20%20%3Fidentifier%20cidoc%3AP42_assigned%20%3Fobjectname.%0A%7D%20&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
 
 To obtain the label of the terms, use SKOS or RDFS. 
 
@@ -87,7 +89,7 @@ WHERE {
 }
 ```
 
-[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0APREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0A%0ASELECT%20DISTINCT%20%3Flabel%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP41i_was_classified_by%20%3Fidentifier.%0A%20%20%3Fidentifier%20cidoc%3AP42_assigned%20%3Fobjectname.%0A%20%20%3Fobjectname%20skos%3AprefLabel%20%3Flabel%0A%7D%0A&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
+[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0APREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0A%0ASELECT%20%3Flabel%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP41i_was_classified_by%20%3Fidentifier.%0A%20%20%3Fidentifier%20cidoc%3AP42_assigned%20%3Fobjectname.%0A%20%20%3Fobjectname%20skos%3AprefLabel%20%3Flabel%0A%7D%0A&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
 
 In addition, it is also possible to query on specific terms or agents, using the link to the external thesauri
 
@@ -125,6 +127,7 @@ WHERE {
 }
 }
 ```
+[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0A%0ASELECT%20COUNT(%3Ftitle)%0AWHERE%7B%0ASELECT%20%3Ftitle%20FROM%20%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP102_has_title%20%3Ftitle.%0A%7D%0A%7D&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
 
 ## Filter
 
@@ -144,6 +147,7 @@ WHERE {
   FILTER (regex(?title, "Gent", "i"))
 } 
 ```
+[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0A%0ASELECT%20%3Ftitle%20%0AFROM%20%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP102_has_title%20%3Ftitle.%0A%20%20FILTER%20(regex(%3Ftitle%2C%20%22Gent%22%2C%20%22i%22))%0A%7D%20&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
 
 ## Bind
 
@@ -181,7 +185,7 @@ WHERE {
 SELECT ?object ?priref FROM <http://stad.gent/ldes/hva>
 WHERE { 
 ?object purl:isVersionOf ?priref.
-} ORDER BY DESC(?versie)
+} ORDER BY DESC(?object)
 }
 ```
 
@@ -201,6 +205,7 @@ WHERE {
   ?object cidoc:P102_has_title ?title.
 } 
 ```
+[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0A%0ASELECT%20%3Ftitle%20%0AFROM%20%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E%20%0AFROM%20%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fdmg%3E%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP102_has_title%20%3Ftitle.%0A%7D%20&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
 
 However, when the query gets to complicated, it is better to use UNION.
 
@@ -225,6 +230,7 @@ WHERE {
   ?creator rdfs:label ?label.
 } LIMIT 100
 ```
+[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0APREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX%20la%3A%20%3Chttps%3A%2F%2Flinked.art%2Fns%2Fterms%2F%3E%0APREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0A%0ASELECT%20DISTINCT%20%3Finstitution%20%3Ftitle%20%3Flabel%0AWHERE%20%7B%0A%20%20%3Fobject%20cidoc%3AP50_has_current_keeper%20%3Finstitution%20.%0A%20%20%3Fobject%20cidoc%3AP102_has_title%20%3Ftitle%20.%0A%20%20%3Fobject%20cidoc%3AP108i_was_produced_by%20%3Fproduction%20.%0A%20%20%3Fproduction%20cidoc%3AP14_carried_out_by%20%3Fmaker%20.%0A%20%20%7B%3Fmaker%20la%3Aequivalent%20%3Chttps%3A%2F%2Fstad.gent%2Fid%2Fagent%2F670003618%3E%20%7D%20UNION%20%7B%3Fmaker%20la%3Aequivalent%20%3Chttps%3A%2F%2Fstad.gent%2Fid%2Fagent%2F570025558%3E%7D%20.%0A%20%20%3Fmaker%20la%3Aequivalent%20%3Fcreator.%0A%20%20%3Fcreator%20rdfs%3Alabel%20%3Flabel.%0A%7D%20LIMIT%20100&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
 
 ## Pagination
 
@@ -252,7 +258,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
        FILTER (regex(?label, "^circus$", "i"))
 
-     } ORDER BY DESC(?versie)
+     } ORDER BY DESC(?object)
   }
 LIMIT 1000
 OFFSET 1000
