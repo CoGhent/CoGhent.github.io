@@ -40,7 +40,6 @@ nav_order: 4
 | [technique](https://cidoc-crm.org/html/cidoc_crm_v7.1.1.html#P32)                 | Activiteit.gebruikteTechniek       | [Techniek](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Element/Techniek)                                                          | 
 | [acquisition](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P32)                | Activiteit.gebruikteTechniek       | [Term verwervingsmethode](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Term_verwervingsmethode)                                                          | 
 | [acquisition location](https://cidoc-crm.org/html/5.0.4/cidoc-crm.html#P7)                | Gebeurtenis.plaats      | [Plaats verwervingsmethode](https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/Term_verwervingsmethode)                                                          |
-                                                  |
 
 
 ## Published Collections
