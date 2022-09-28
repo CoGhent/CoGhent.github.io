@@ -61,7 +61,7 @@ Event stream containing objects from the collection of Archief Gent:
 - Photo-archive of Geo Pieters, a press photographer (122 pictures);
 - Photo-archive of Michel Burez, a photographer who worked for the Dienst Monumenten en Architectuur (service for monuments and architecture). The collection contains 3.400 pictures;
 - Pictures of the 'Stedelijke Commmissie van Monumenten en Stadsgezichten' (SCMS);
-- Collection of Wynantz, 1820-1823: 134 drawings of the city;
+- Collection of Wynantz, 1820-1823: 134 drawings of the city  in possession of Archive Ghent AND 22 drawings in possession of a private collector;
 - Kriegsalbum Gent, 1915-1916: 606 pictures of (German) soldiers during the First World War, made by German soldiers in Ghent.
 - Movieposters between 1938-1961: a collection of more than 9.000 movie posters. The posters are also recognized as 'masterpieces' because they are unique in their kind.
 
