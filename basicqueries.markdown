@@ -119,15 +119,13 @@ WHERE {
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
 
-SELECT COUNT(?title)
-WHERE{
-SELECT ?title FROM <http://stad.gent/ldes/hva> 
+SELECT COUNT( DISTINCT ?title) FROM <http://stad.gent/ldes/hva> 
 WHERE { 
   ?object cidoc:P102_has_title ?title.
 }
-}
+
 ```
-[try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0A%0ASELECT%20COUNT(%3Ftitle)%0AWHERE%7B%0ASELECT%20%3Ftitle%20FROM%20%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP102_has_title%20%3Ftitle.%0A%7D%0A%7D&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
+[try live](https://stad.gent/sparql?default-graph-uri=&query=PREFIX+cidoc%3A+%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0D%0A%0D%0ASELECT+COUNT%28+DISTINCT+%3Ftitle%29+FROM+%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E+%0D%0AWHERE+%7B+%0D%0A++%3Fobject+cidoc%3AP102_has_title+%3Ftitle.%0D%0A%7D%0D%0A&format=text%2Fhtml&should-sponge=&timeout=0&signal_void=on)
 
 ## Filter
 
