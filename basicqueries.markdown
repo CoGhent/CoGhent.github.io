@@ -100,7 +100,7 @@ In addition, it is also possible to query on specific terms or agents, using the
 ```
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
 
-SELECT ?record ?title
+SELECT ?object ?title
 WHERE { 
   ?object cidoc:P102_has_title ?title.
   ?object cidoc:P41i_was_classified_by ?identifier.
