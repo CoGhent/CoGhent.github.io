@@ -13,7 +13,7 @@ There is a workaround to retrieve the page of the event stream on which the late
 **Step 1**: open the IIIF manifest of the object from which you want to retrieve the event stream. This can be done via the corresponding object number (https://api.collectie.gent/iiif/presentation/v2/manifest/{PUBLISHING_INSTITUTION}:{OBJECT_NUMBER}).
 
 
-For example: https://api.collectie.gent/iiif/presentation/v2/manifest/dmg:1987-1049
+For example: [https://api.collectie.gent/iiif/presentation/v2/manifest/dmg:1987-1049](https://api.collectie.gent/iiif/presentation/v2/manifest/dmg:1987-1049)
 
 
 **Step 2**: from within the manifest copy the timestamp under "rendering", "@id"
@@ -29,4 +29,4 @@ For the given example: "2022-06-10T00:19:02.777Z"
  {PASTE HERE}
  
  
- For the given example: https://apidg.gent.be/opendata/adlib2eventstream/v1/dmg/objecten?generatedAtTime=2022-06-10T00:19:02.777Z
+ For the given example: [https://apidg.gent.be/opendata/adlib2eventstream/v1/dmg/objecten?generatedAtTime=2022-06-10T00:19:02.777Z](https://apidg.gent.be/opendata/adlib2eventstream/v1/dmg/objecten?generatedAtTime=2022-06-10T00:19:02.777Z)
