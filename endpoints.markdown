@@ -12,8 +12,8 @@ nav_order: 1
 
 |Abbreviation|Publishing Organisation|Endpoint|
 |---------|----------|-----------|
-|dmg|Design Museum Gent|https://stad.gent/ldes/dmg|
-|hva|Huis van Alijn|https://stad.gent/ldes/hva|
-|industriemuseum|Industriemuseum|https://stad.gent/ldes/industriemuseum|
-|stam|STAM|https://stad.gent/ldes/stam|
-|archiefgent|Archief Gent|https://stad.gent/ldes/archief|  
+|dmg|Design Museum Gent|http://stad.gent/ldes/dmg|
+|hva|Huis van Alijn|http://stad.gent/ldes/hva|
+|industriemuseum|Industriemuseum|http://stad.gent/ldes/industriemuseum|
+|stam|STAM|http://stad.gent/ldes/stam|
+|archiefgent|Archief Gent|http://stad.gent/ldes/archief|  
