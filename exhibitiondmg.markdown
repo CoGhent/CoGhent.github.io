@@ -2,7 +2,7 @@
 layout: page
 title: Exhibitions DMG
 parent: LDES
-nav_order: 8
+nav_order: 7
 ---
 
 
