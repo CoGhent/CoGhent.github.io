@@ -147,6 +147,30 @@ WHERE {
 ```
 [try live](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Flodi.ilabt.imec.be%2Fsparql%2Fgent&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0A%0ASELECT%20%3Ftitle%20%0AFROM%20%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20cidoc%3AP102_has_title%20%3Ftitle.%0A%20%20FILTER%20(regex(%3Ftitle%2C%20%22Gent%22%2C%20%22i%22))%0A%7D%20&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
 
+This filter will look for the value you present in the entire field. Which means sometimes you get too much results. To make sure you only get values that fully equal your search value, use ^ in front of your value and $ after your value.
+
+*for example*
+
+*this query returns the titel and label for all records in the CoGent event streams with subject 'koffie'. It excludes for example records with subject 'koffiemolen'*
+
+```
+PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?title ?label 
+WHERE { 
+       ?object cidoc:P102_has_title ?title.
+       ?object cidoc:P128_carries ?carries.
+       ?carries cidoc:P129_is_about ?about.
+       ?about cidoc:P2_has_type ?type.
+       ?type skos:prefLabel ?label.
+       FILTER (regex(?label, "^koffie$", "i"))
+} ORDER BY DESC(?object)
+```
+
+[try live](https://query.linkeddatafragments.org/#datasources=https%3A%2F%2Fstad.gent%2Fsparql&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0APREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0A%0ASELECT%20DISTINCT%20%3Ftitle%20%3Flabel%20%0AWHERE%20%7B%20%0A%20%20%20%20%20%20%20%3Fobject%20cidoc%3AP102_has_title%20%3Ftitle.%0A%20%20%20%20%20%20%20%3Fobject%20cidoc%3AP128_carries%20%3Fcarries.%0A%20%20%20%20%20%20%20%3Fcarries%20cidoc%3AP129_is_about%20%3Fabout.%0A%20%20%20%20%20%20%20%3Fabout%20cidoc%3AP2_has_type%20%3Ftype.%0A%20%20%20%20%20%20%20%3Ftype%20skos%3AprefLabel%20%3Flabel.%0A%20%20%20%20%20%20%20FILTER%20(regex(%3Flabel%2C%20%22%5Ekoffie%24%22%2C%20%22i%22))%0A%7D%20ORDER%20BY%20DESC(%3Fobject)%0A%0A)
+
+
 ## Bind
 
 To manipulate the data in your query, BIND can be used.
