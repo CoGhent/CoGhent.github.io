@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Thesaurus
+title: Thesaurus & Agent list
 parent: LDES
 nav_order: 6
 ---
@@ -9,3 +9,8 @@ nav_order: 6
 ## **Thesaurus** 
 
 link: https://apidg.gent.be/opendata/adlib2eventstream/v1/adlib/thesaurus  
+
+## **Agent List**
+
+
+link: https://apidg.gent.be/opendata/adlib2eventstream/v1/adlib/personen  
