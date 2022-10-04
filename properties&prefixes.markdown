@@ -70,3 +70,7 @@ nav_order: 2
 | priref          | Object.identificator | adms:identifier skos:notation |
 | source          | owl:sameAs           | owl:sameAs                    |
 | publishing date | prov:generetedAtTime | prov:generatedAtTime          |
+
+## How to use prefixes en properties
+
+...
