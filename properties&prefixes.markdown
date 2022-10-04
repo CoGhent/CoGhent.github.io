@@ -18,7 +18,7 @@ nav_order: 2
 
 ## Prefixes
 
-- cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
+- cidoc: "<http://www.cidoc-crm.org/cidoc-crm/>"
 - adms: <http://www.w3.org/ns/adms#>
 - la: <https://linked.art/ns/terms/>
 - skos: <http://www.w3.org/2004/02/skos/core#>
