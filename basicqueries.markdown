@@ -178,19 +178,20 @@ BIND & CONCAT
 *this query returns the link to the (different versions) of the event stream of het Huis van Alijn for a certain objectnumber (in filter).*
 
 ```
-		PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-		PREFIX adms: <http://www.w3.org/ns/adms#>
-		PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX adms: <http://www.w3.org/ns/adms#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
 		
-		SELECT DISTINCT ?ldes FROM <http://stad.gent/ldes/hva> 
-		WHERE { 
-		  ?object adms:identifier ?identifier.
-		  ?identifier skos:notation ?objectnumber.
-		  FILTER (regex(?objectnumber, "2004-247-616", "i")).
-		 ?object prov:generatedAtTime ?time.
-		 BIND(URI(concat("https://apidg.gent.be/opendata/adlib2eventstream/v1/hva/objecten?generatedAtTime=", ?time)) AS ?ldes)
-		 } ORDER BY DESC(?object)
+SELECT DISTINCT ?ldes FROM <http://stad.gent/ldes/hva> 
+WHERE { 
+  ?object adms:identifier ?identifier.
+  ?identifier skos:notation ?objectnumber.
+  FILTER (regex(?objectnumber, "2004-247-616", "i")).
+  ?object prov:generatedAtTime ?time.
+BIND(URI(concat("https://apidg.gent.be/opendata/adlib2eventstream/v1/hva/objecten?generatedAtTime=", ?time)) AS ?ldes)
+} ORDER BY DESC(?object)
 ```
+
 [try live](https://query.linkeddatafragments.org/#datasources=https%3A%2F%2Fstad.gent%2Fsparql&query=PREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX%20adms%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fadms%23%3E%0APREFIX%20prov%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0A%09%09%0ASELECT%20DISTINCT%20%3Fldes%20FROM%20%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fhva%3E%20%0AWHERE%20%7B%20%0A%20%20%3Fobject%20adms%3Aidentifier%20%3Fidentifier.%0A%20%20%3Fidentifier%20skos%3Anotation%20%3Fobjectnumber.%0A%20%20FILTER%20(regex(%3Fobjectnumber%2C%20%222004-247-616%22%2C%20%22i%22)).%0A%20%20%3Fobject%20prov%3AgeneratedAtTime%20%3Ftime.%0ABIND(URI(concat(%22https%3A%2F%2Fapidg.gent.be%2Fopendata%2Fadlib2eventstream%2Fv1%2Fhva%2Fobjecten%3FgeneratedAtTime%3D%22%2C%20%3Ftime))%20AS%20%3Fldes)%0A%7D%20ORDER%20BY%20DESC(%3Fobject)%0A%0A)
 
 ## Distinct & Order by
