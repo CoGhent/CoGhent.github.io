@@ -35,6 +35,6 @@ Collections of Ghent published multiple Linked Data Event streams containing inf
 The Linked Data Event Streams are enriched with links to IIIF manifests containing the images of the published objects. 
 
 In addition three extra event streams have been published: 
-- [Agent lists](https://coghent.github.io/agent.html) from all five institutions 
+- [Agent lists](https://coghent.github.io/thesaurus.html) from all five institutions 
 - [Thesaurus](https://coghent.github.io/thesaurus.html) (concepts) from all five institutions
 - [Exhibition data](https://coghent.github.io/exhibitiondmg.html) from Design Museum Gent.
