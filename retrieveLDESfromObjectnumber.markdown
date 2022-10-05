@@ -5,8 +5,21 @@ parent: API
 nav_order: 3
 ---
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
-## **Retrieve object from LDES via URL using object number**
+## **Retrieve link to LDES**
+
+Click [here](https://getldes.herokuapp.com/linktoldes/getldes/) to retrieve the link to most recently published LDES version. 
+
+
+## **Retrieve object from LDES via URL manually**
 
 There is a workaround to retrieve the page of the event stream on which the latest state of an object is published. Precondition for this method to be used is that the object number is known. 
 
