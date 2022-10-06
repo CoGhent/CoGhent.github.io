@@ -11,12 +11,57 @@ The actor-init-ldes-client can be used to harvest the published eventstreams via
 
 ## setup
 
-1. to use the actor-init-ldes-client first install the npm package on the location where you want to run the script. To do this copy the commmand line below in the CLI; 
+Make sure you have [Node.js](https://nodejs.org/en/) installed. Open the Node.js command prompt. Install the actor-init-ldes-client npm package:
 
 ```
 npm install -g @treecg/actor-init-ldes-client
 ```
-2. save the context (from the code below) locally. 
+
+Run a command in the Node.js command prompt to harvest to harvest a certain event stream
+
+*for example*
+
+```
+actor-init-ldes-client  https://apidg.gent.be/opendata/adlib2eventstream/v1/hva/objecten
+```
+
+The links to the event streams can be found [here](https://coghent.github.io/LDES/)
+
+It is possible to add multiple parameters to your command:
+
+| Parameter  | Description | Possible values |
+| ------------- | ------------- | ------------- |
+| pollingInterval | Number of milliseconds before refetching uncacheable fragments  | for example: 5000 |
+| mimeType  | the MIME type of the output  | application/ld+json, text/turtle... |
+| context  | path to a file with the JSON-LD context you want to use when MIME type is application/ld+json  | for example: ./context.jsonld |
+| fromTime  | datetime to prune relations that have a lower datetime value | for example: 2020-01-01T00:00:00 |
+| emitMemberOnce  | whether to emit a member only once, because collection contains immutable version objects.  | true / false |
+| disableSynchronization  | whether to disable synchronization or not (by default set to "false", syncing is enabled) | true / false |
+| disableFraming  | whether to disable JSON-LD framing when mimeType is 'application/ld+json' or when representation is 'Object' (by default set to "false"). Value can be set to "true" or "false" | true / false |
+| dereferenceMembers | whether to dereference members, because the collection pages do not contain all information (by default: false). | true / false |
+| requestsPerMinute | how many requests per minutes may be sent to the same host (optional) | any number |
+| loggingLevel | The detail level of logging; useful for debugging problems. (default: info)| 'error', 'warn', 'info', 'verbose', 'debug', 'silly' |
+| processedURIsCount | The maximum number of processed URIs (members and fragments) that remain in the cache. (default: 10000) | any number |
+
+
+*for example*
+
+```
+actor-init-ldes-client --pollingInterval 5000 --mimeType application/ld+json --context context.jsonld --fromTime 2021-02-03T15:48:12.309Z --emitMemberOnce true --disablePolling true https://apidg.gent.be/opendata/adlib2eventstream/v1/dmg/objecten
+```
+
+## Use locally
+
+
+Install the npm package on the location where you want to run the script. Copy the commmand line below in the CLI; 
+
+```
+npm install -g @treecg/actor-init-ldes-client
+```
+
+## Use context
+
+Save the context (from the code below) locally. 
 
 ```
 {   "@context": [
@@ -38,9 +83,9 @@ npm install -g @treecg/actor-init-ldes-client
   ]
 }
 ```
-## usage 
 
-after installing the npm package the following commands can be used to fetch the event streams. Make sure to exchange the FILEPATH_TO_CONTEXT to the path containing the context file as shown above. 
+
+The following commands can be used to fetch the event streams. Make sure to exchange the FILEPATH_TO_CONTEXT to the path containing the context file as shown above. 
 
 ```
 // Design Museum Gent (objects)
