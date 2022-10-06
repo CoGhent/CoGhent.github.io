@@ -121,3 +121,13 @@ actor-init-ldes-client --pollinInterval 5000 --mimeType application/ld+json --co
 ```
 
 ***
+
+## Save result
+
+To save the result add following line to your command:
+
+```
+> PATH_TO_DIRECTORY\output.json
+```
+
+A json file (output.json) will be saved in the directory of your choice.
