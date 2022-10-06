@@ -9,6 +9,15 @@ nav_order: 2
 
 The actor-init-ldes-client can be used to harvest the published eventstreams via the command line interface (CLI) or can be setup within an application. Full documentation on the actor-init-ldes-client can be found [here](https://github.com/TREEcg/event-stream-client/tree/main/packages/actor-init-ldes-client). 
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 ## Setup
 
 Make sure you have [Node.js](https://nodejs.org/en/) installed. Open the Node.js command prompt. Install the actor-init-ldes-client npm package:
