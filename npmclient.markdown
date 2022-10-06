@@ -59,6 +59,8 @@ Install the npm package on the location where you want to run the script. Copy t
 npm install -g @treecg/actor-init-ldes-client
 ```
 
+In order to use it as a library, you can leave out the **-g**.
+
 ## Use context
 
 Save the context (from the code below) locally. 
