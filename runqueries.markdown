@@ -64,7 +64,7 @@ except Exception as e:
 
 ## pyLoDStorage
 
-Another method to sparql with python is the library [pyLODStorage](https://github.com/WolfgangFahl/pyLoDStorage). It is possible to store the results directly into a pandas dataframe.
+Another method to sparql with python is the library [pyLODStorage](https://github.com/WolfgangFahl/pyLoDStorage). This library makes it possible to store the results directly into a pandas dataframe.
 
 *for example*
 
