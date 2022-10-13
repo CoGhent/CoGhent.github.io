@@ -73,20 +73,19 @@ from lodstorage.sparql import SPARQL
 from lodstorage.csv import CSV
 import pandas as pd
 
-querylist.append("""
+sparqlQuery = ("""
     PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
-
-    SELECT ?title
+    
+    SELECT ?objectname 
     WHERE { 
-      ?object cidoc:P102_has_title ?title.
+      ?object cidoc:P41i_was_classified_by ?identifier.
+      ?identifier cidoc:P42_assigned ?objectname.
     } 
     """)
 
-df_sparql = pd.DataFrame()
-sparqlQuery = query
 sparql = SPARQL("https://stad.gent/sparql")
 qlod = sparql.queryAsListOfDicts(sparqlQuery)
 csv = CSV.toCSV(qlod)
 df_result = pd.DataFrame([x.split(',') for x in csv.split('\n')])
-df_sparql = df_sparql.append(df_result, ignore_index=True)
+print(df_result)
 ```
