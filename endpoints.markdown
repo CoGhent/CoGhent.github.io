@@ -18,3 +18,4 @@ nav_order: 1
 |stam|STAM|http://stad.gent/ldes/stam|
 |archiefgent|Archief Gent|http://stad.gent/ldes/archief|  
 |thesaurus|Thesaurus|<http://stad.gent/ldes/thesaurus>|  
+|personen|Agent list|<http://stad.gent/ldes/personen>|
