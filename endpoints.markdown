@@ -17,3 +17,4 @@ nav_order: 1
 |industriemuseum|Industriemuseum|http://stad.gent/ldes/industriemuseum|
 |stam|STAM|http://stad.gent/ldes/stam|
 |archiefgent|Archief Gent|http://stad.gent/ldes/archief|  
+|thesaurus|Thesaurus|<http://stad.gent/ldes/thesaurus>|  
