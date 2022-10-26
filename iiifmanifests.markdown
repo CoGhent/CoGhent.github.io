@@ -52,7 +52,7 @@ else:
 E.g.:  
 ```
 def image(request):
-    iiif_manifest = "https://api.collectie.gent/iiif/presentation/v2/manifest/#cogentid#"
+    iiif_manifest = "https://api.collectie.gent/iiif/presentation/v2/manifest/#instelling (dmg, hva, industriemuseum, archiefgent, stam):objectnumber#"
 
     try:
         response = urlopen(manifest)
