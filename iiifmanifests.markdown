@@ -50,9 +50,10 @@ else:
 ```  
 
 E.g.:  
+*#cogentid# equals instelling:objectnumber (dmg:objectnumber, hva:objectnumber, industriemuseum:objectnumber, stam:objectnumber, archiefgent:objectnumber)* 
 ```
 def image(request):
-    iiif_manifest = "https://api.collectie.gent/iiif/presentation/v2/manifest/#instelling (dmg, hva, industriemuseum, archiefgent, stam):objectnumber#"
+    iiif_manifest = "https://api.collectie.gent/iiif/presentation/v2/manifest/#cogentid#"
 
     try:
         response = urlopen(manifest)
