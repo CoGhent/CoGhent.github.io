@@ -7,8 +7,6 @@ nav_order: 2
 
 # actor-init-ldes-client
 
-The actor-init-ldes-client can be used to harvest the published eventstreams via the command line interface (CLI) or can be setup within an application. Full documentation on the actor-init-ldes-client can be found [here](https://github.com/TREEcg/event-stream-client/tree/main/packages/actor-init-ldes-client). 
-
 <details open markdown="block">
   <summary>
     Table of contents
@@ -18,6 +16,8 @@ The actor-init-ldes-client can be used to harvest the published eventstreams via
 {:toc}
 </details>
 
+The actor-init-ldes-client can be used to harvest the published eventstreams via the command line interface (CLI) or can be setup within an application. Full documentation on the actor-init-ldes-client can be found [here](https://github.com/TREEcg/event-stream-client/tree/main/packages/actor-init-ldes-client). 
+
 ## Setup
 
 Make sure you have [Node.js](https://nodejs.org/en/) installed. Open the Node.js command prompt. Install the actor-init-ldes-client npm package:
@@ -26,7 +26,7 @@ Make sure you have [Node.js](https://nodejs.org/en/) installed. Open the Node.js
 npm install -g @treecg/actor-init-ldes-client
 ```
 
-Run a command in the Node.js command prompt to harvest to harvest a certain event stream
+Run your command in the Node.js command prompt to harvest a certain event stream
 
 *for example*
 
@@ -72,6 +72,8 @@ In order to use it as a library, you can leave out the **-g**.
 
 ## Use context
 
+By making use of following contextfile, the harvested results will be structured using OSLO.
+
 Save the context (from the code below) locally. 
 
 ```
@@ -95,36 +97,9 @@ Save the context (from the code below) locally.
 }
 ```
 
-
-The following commands can be used to fetch the event streams. Make sure to exchange the FILEPATH_TO_CONTEXT to the path containing the context file as shown above. 
-
-```
-// Design Museum Gent (objects)
-
-actor-init-ldes-client --pollinInterval 5000 --mimeType application/ld+json --context FILEPATH_TO_CONTEXT --fromTime "2022-05-00T00:00:00.309Z" --emitMemberOnce false --disablePolling true https://apidg.gent.be/opendata/adlib2eventstream/v1/dmg/objecten
-
-// Archief Gent (objects)
-
-actor-init-ldes-client --pollinInterval 5000 --mimeType application/ld+json --context FILEPATH_TO_CONTEXT --fromTime "2022-05-00T00:00:00.309Z" --emitMemberOnce false --disablePolling true https://apidg.gent.be/opendata/adlib2eventstream/v1/archiefgent/objecten
-
-// STAM (objects)
-
-actor-init-ldes-client --pollinInterval 5000 --mimeType application/ld+json --context FILEPATH_TO_CONTEXT --fromTime "2022-05-00T00:00:00.309Z" --emitMemberOnce false --disablePolling true https://apidg.gent.be/opendata/adlib2eventstream/v1/stam/objecten
-
-// Huis van Alijn (objects). 
-
-actor-init-ldes-client --pollinInterval 5000 --mimeType application/ld+json --context FILEPATH_TO_CONTEXT --fromTime "2022-05-00T00:00:00.309Z" --emitMemberOnce false --disablePolling true https://apidg.gent.be/opendata/adlib2eventstream/v1/hva/objecten
-
-Industriemuseum (objects) 
-
-actor-init-ldes-client --pollinInterval 5000 --mimeType application/ld+json --context FILEPATH_TO_CONTEXT --fromTime "2022-05-00T00:00:00.309Z" --emitMemberOnce false --disablePolling true https://apidg.gent.be/opendata/adlib2eventstream/v1/im/objecten
-```
-
-***
-
 ## Save result
 
-To save the result add following line to your command:
+To save the result add following line at the end of your command:
 
 ```
 > PATH_TO_DIRECTORY\output.json
