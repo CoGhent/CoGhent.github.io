@@ -39,6 +39,12 @@ In addition three extra event streams have been published:
 - [Thesaurus](https://coghent.github.io/thesaurus.html) (concepts) from all five institutions
 - [Exhibition data](https://coghent.github.io/exhibitiondmg.html) from Design Museum Gent.
 
+## Using the data
+
+API
+
+SparQL Endpoint
+
 ## Terms of use
 
 
