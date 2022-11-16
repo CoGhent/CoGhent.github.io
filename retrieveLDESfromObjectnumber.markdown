@@ -1,8 +1,8 @@
 ---
 layout: page
-title: How to retrieve LDES objects from object numbers
+title: LDES objects from object numbers
 parent: API
-nav_order: 3
+nav_order: 4
 ---
 
 <details open markdown="block">
