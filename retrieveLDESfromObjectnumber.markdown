@@ -1,6 +1,6 @@
 ---
 layout: page
-title: LDES objects from object numbers
+title: Objectnumber to LDES
 parent: API
 nav_order: 4
 ---
