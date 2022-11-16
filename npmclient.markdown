@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ldes-client
+title: Harvest LDES
 parent: API
 nav_order: 2
 ---
