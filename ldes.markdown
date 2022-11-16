@@ -47,4 +47,18 @@ SparQL Endpoint
 
 ## Terms of use
 
+### Metadata
+
+All metadata contained in the Linked Data Event Streams is published under a CC0 license.
+
+### Images
+
+Images are published under multiple licenses. The license of an image can be found in the IIIF manifests. 
+
+*for example*
+
+![image](https://user-images.githubusercontent.com/78723853/202168875-68c163d5-4d57-4f3a-96a4-716d618395f0.png)
+
+The licenses used for published images in the Collections of Ghent are:
+
 
