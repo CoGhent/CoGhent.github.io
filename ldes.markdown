@@ -23,7 +23,7 @@ Collections of Ghent published its data using Linked Data Event Streams. A Linke
 
 If you are new to the concept of Linked Data Event Stream or Linked Data, [this short training](https://academy.europa.eu/courses/publishing-data-with-linked-data-event-streams-why-and-how) introduces the main concepts.
 
-## CoGent Linked Data Event Streams
+## CoGhent Linked Data Event Streams
 
 Collections of Ghent published multiple Linked Data Event streams containing information on objects from five cultural heritage organizations located in the city of Ghent: 
 - [Design Museum Gent](https://coghent.github.io/dmg.html)
