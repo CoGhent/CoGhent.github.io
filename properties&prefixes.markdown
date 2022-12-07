@@ -18,6 +18,42 @@ nav_order: 2
 
 Compose your query by using below prefixes and properties. 
 
+*for example - This query selects all titles in the event streams of CoGhent*
+```
+SELECT ?title
+WHERE { 
+  ?object <<span>http://www.cidoc-crm.org/cidoc-crm/P102_has_title<span>> ?title.
+} 
+```
+
+To make the query more readable when querying multiple fields, we split the property. The portion that always remains the same is the PREFIX, the unique value that follows is the property.
+
+*for example - Previous query becomes:*
+
+```
+PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT ?title
+WHERE { 
+  ?object cidoc:P102_has_title ?title.
+} 
+```
+Sometimes multiple properties need to be used to get to the value needed.
+
+*for example*
+
+```
+PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT ?objectname 
+WHERE { 
+  ?object cidoc:P41i_was_classified_by ?identifier.
+  ?identifier cidoc:P42_assigned ?objectname.
+} 
+```
+
+To help build your queries, the cogent querybuilder can be used: [https://coghentapps.herokuapp.com/querybuilder](https://coghentapps.herokuapp.com/querybuilder)
+
 ## Prefixes
 
 PREFIX cidoc: <<span>http://www.cidoc-crm.org/cidoc-crm/<span>><br>
