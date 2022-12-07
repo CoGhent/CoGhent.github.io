@@ -26,7 +26,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#><br>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#><br>
 PREFIX purl: <http://purl.org/dc/terms/><br>
 PREFIX owl: <http://www.w3.org/2002/07/owl#><br>
-PREFIX prov: [<http://www.w3.org/ns/prov#>]<br>
+PREFIX prov: <http://www.w3.org/ns/prov#><br>
 
 ## Properties
 
