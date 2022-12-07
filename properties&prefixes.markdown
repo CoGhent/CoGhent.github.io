@@ -24,11 +24,11 @@ Compose your query by using below prefixes and properties.
 ```
 SELECT ?title
 WHERE { 
-  ?object <<span>http://www.cidoc-crm.org/cidoc-crm/P102_has_title<span>> ?title.
+  ?object <http://www.cidoc-crm.org/cidoc-crm/P102_has_title> ?title.
 } 
 ```
 
-To make the query more readable when querying multiple fields, we split the property. The portion that always remains the same is the PREFIX, the unique value that follows is the property.
+To make the query more readable when querying multiple fields, we split the URL. The portion that always remains the same is the PREFIX, the unique value that follows is the property.
 
 *for example - Previous query becomes:*
 
