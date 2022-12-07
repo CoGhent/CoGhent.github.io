@@ -18,7 +18,7 @@ nav_order: 2
 
 ## Prefixes
 
-PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/><br>
+PREFIX cidoc: <<span>http://www.cidoc-crm.org/cidoc-crm/<span>><br>
 PREFIX adms: <http://www.w3.org/ns/adms#><br>
 PREFIX dataeu: <http://data.europa.eu/m8g/><br>
 PREFIX la: <https://linked.art/ns/terms/><br>
