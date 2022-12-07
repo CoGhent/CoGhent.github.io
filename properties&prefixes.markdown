@@ -16,8 +16,6 @@ nav_order: 2
 {:toc}
 </details>
 
-## How to query
-
 Compose your query by using below prefixes and properties. 
 
 ## Prefixes
