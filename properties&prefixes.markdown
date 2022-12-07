@@ -16,6 +16,8 @@ nav_order: 2
 {:toc}
 </details>
 
+## General
+
 Compose your query by using below prefixes and properties. 
 
 *for example - This query selects all titles in the event streams of CoGhent*
