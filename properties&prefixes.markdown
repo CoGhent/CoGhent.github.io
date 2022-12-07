@@ -16,6 +16,10 @@ nav_order: 2
 {:toc}
 </details>
 
+## How to query
+
+Compose your query by using below prefixes and properties. 
+
 ## Prefixes
 
 PREFIX cidoc: <<span>http://www.cidoc-crm.org/cidoc-crm/<span>><br>
@@ -74,6 +78,4 @@ PREFIX prov: <<span>http://www.w3.org/ns/prov#<span>><br>
 | source          | owl:sameAs           | owl:sameAs                    |
 | publishing date | prov:generetedAtTime | prov:generatedAtTime          |
 
-## How to use prefixes en properties
 
-...
