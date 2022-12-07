@@ -18,14 +18,15 @@ nav_order: 2
 
 ## Prefixes
 
-- cidoc: <<http://www.cidoc-crm.org/cidoc-crm/>>
-- adms: <<http://www.w3.org/ns/adms#>>
-- la: <<https://linked.art/ns/terms/>>
-- skos: <<http://www.w3.org/2004/02/skos/core#>>
-- rdfs: <<http://www.w3.org/2000/01/rdf-schema#>>
-- purl: <<http://purl.org/dc/terms/>>
-- owl: <<http://www.w3.org/2002/07/owl#>>
-- prov: <<http://www.w3.org/ns/prov#>>
+-PREFIX cidoc: [<http://www.cidoc-crm.org/cidoc-crm/>](http://www.cidoc-crm.org/cidoc-crm/)
+-PREFIX adms: [<http://www.w3.org/ns/adms#>](http://www.w3.org/ns/adms#)
+-PREFIX dataeu: [<http://data.europa.eu/m8g/>](http://data.europa.eu/m8g/)
+-PREFIX la: [<https://linked.art/ns/terms/>](https://linked.art/ns/terms/)
+-PREFIX skos: [<http://www.w3.org/2004/02/skos/core#>](http://www.w3.org/2004/02/skos/core#)
+-PREFIX rdfs: [<http://www.w3.org/2000/01/rdf-schema#>](http://www.w3.org/2000/01/rdf-schema#)
+-PREFIX purl: [<http://purl.org/dc/terms/>](http://purl.org/dc/terms/)
+-PREFIX owl: [<http://www.w3.org/2002/07/owl#>](http://www.w3.org/2002/07/owl#)
+-PREFIX prov: [<http://www.w3.org/ns/prov#>](http://www.w3.org/ns/prov#)
 
 ## Properties
 
