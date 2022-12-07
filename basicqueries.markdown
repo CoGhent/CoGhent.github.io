@@ -16,10 +16,6 @@ nav_order: 3
 {:toc}
 </details>
 
-## CoGhent Querybuilder
-
-[CoGhent Querybuilder](https://cogent-querybuilder.herokuapp.com/) makes it easy to build queries. 
-
 ## Select
 
 Use SELECT to define which data you want to have returned with your query. 
