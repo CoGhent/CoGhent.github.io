@@ -59,14 +59,14 @@ To help build your queries, the cogent querybuilder can be used: [https://coghen
 ## Prefixes
 
 PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/<span>><br>
-PREFIX adms: <<span>http://www.w3.org/ns/adms#<span>><br>
-PREFIX dataeu: <<span>http://data.europa.eu/m8g/<span>><br>
-PREFIX la: <<span>https://linked.art/ns/terms/<span>><br>
-PREFIX skos: <<span>http://www.w3.org/2004/02/skos/core#<span>><br>
-PREFIX rdfs: <<span>http://www.w3.org/2000/01/rdf-schema#<span>><br>
-PREFIX purl: <<span>http://purl.org/dc/terms/<span>><br>
-PREFIX owl: <<span>http://www.w3.org/2002/07/owl#<span>><br>
-PREFIX prov: <<span>http://www.w3.org/ns/prov#<span>><br>
+PREFIX adms: <http://www.w3.org/ns/adms#<span>><br>
+PREFIX dataeu: <http://data.europa.eu/m8g/<span>><br>
+PREFIX la: <https://linked.art/ns/terms/<span>><br>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#<span>><br>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#<span>><br>
+PREFIX purl: <http://purl.org/dc/terms/<span>><br>
+PREFIX owl: <http://www.w3.org/2002/07/owl#<span>><br>
+PREFIX prov: <http://www.w3.org/ns/prov#<span>><br>
 
 ## Properties
 
