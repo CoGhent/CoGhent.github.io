@@ -58,7 +58,7 @@ To help build your queries, the cogent querybuilder can be used: [https://coghen
 
 ## Prefixes
 
-PREFIX cidoc: <<span>http://www.cidoc-crm.org/cidoc-crm/<span>><br>
+PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/<span>><br>
 PREFIX adms: <<span>http://www.w3.org/ns/adms#<span>><br>
 PREFIX dataeu: <<span>http://data.europa.eu/m8g/<span>><br>
 PREFIX la: <<span>https://linked.art/ns/terms/<span>><br>
