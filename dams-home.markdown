@@ -11,3 +11,12 @@ nav_order: 1
 Based on the main user group the following documentation and pages are written and published in dutch. 
 
 verzameling van documentatie en handleidingen met betrekking tot het beeldbeheersysteem en ondersteunende technologie ontwikkelt binnen CoGhent.
+
+<details open markdown="block"> 
+    <summary>
+        inhoudstafel
+    </summary>
+    {: .text-delta }
+1. TOC
+{:toc}
+</details>
