@@ -1,8 +1,7 @@
 ---
 layout: page
 title: DAMS - import beelden
-permalink: /DAMS/import/
-has_children: false
+parent: DAMS
 nav_order: 2
 ---
 
