@@ -1,9 +1,9 @@
 --- 
 layout: page 
 title: DAMS (dutch)
-permalink /DAMS/
-has_children:true
-nav_order 1
+permalink: /DAMS/
+has_children: true
+nav_order: 1
 ---
 
 # DAMS
