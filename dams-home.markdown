@@ -6,14 +6,6 @@ has_children: true
 nav_order: 1
 ---
 
-<details open markdown="block"> 
-    <summary>
-        inhoudstafel
-    </summary>
-    {: .text-delta }
-1. TOC
-{:toc}
-</details>
 
 # DAMS
 
