@@ -1,7 +1,7 @@
 --- 
 layout: page
 title: DAMS - zoekfunctionaliteiten
-parent: DAMS (Dutch)
+parent: DAMS
 nav_order: 3
 --- 
 
