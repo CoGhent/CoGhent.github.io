@@ -1,11 +1,11 @@
 --- 
 layout: page
 title: DAMS - zoekfunctionaliteiten
-parent: DAMS
-nav_order: 2
+parent: DAMS (Dutch)
+nav_order: 3
 --- 
 
-# DAMS zoekfunctionaliteiten
+## **DAMS zoekfunctionaliteiten**
 ## zoekbalk
 via de zoekbalk kan je op specifieke termen zoeken in de database. Let op: voor geavanceerde zoekopdrachten dient gebruik gemaakt te worden van de filters. 
 
