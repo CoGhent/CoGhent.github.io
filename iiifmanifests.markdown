@@ -2,7 +2,7 @@
 layout: page
 title: IIIF Manifests
 permalink: /IIIF Manifests/
-nav_order: 4
+nav_order: 5
 ---
 
 # **IIIF Manifests** 
