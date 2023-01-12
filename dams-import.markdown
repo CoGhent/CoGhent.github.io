@@ -1,6 +1,6 @@
 ---
 layout: page
-title: DAMS - import beelden
+title: import beelden
 parent: DAMS
 nav_order: 1
 ---
