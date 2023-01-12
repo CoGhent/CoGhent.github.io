@@ -1,6 +1,6 @@
 ---
 layout: page
-title: login
+title: Login
 parent: DAMS
 nav_order: 2
 ---
