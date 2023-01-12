@@ -1,7 +1,7 @@
 ---
 layout: page
 title: DAMS - import beelden
-parent: DAMS (Dutch)
+parent: DAMS
 nav_order: 1
 ---
 
