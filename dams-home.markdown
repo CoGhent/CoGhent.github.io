@@ -1,6 +1,6 @@
 --- 
 layout: page 
-title: DAMS (dutch)
+title: DAMS
 permalink: /DAMS/
 has_children: true
 nav_order: 1
