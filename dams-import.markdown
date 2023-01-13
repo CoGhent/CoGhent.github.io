@@ -20,11 +20,8 @@ Indien je nog geen account hebt, maak eerst een account aan en meld je aan.
 
 
 Na aanmelding zie je links een menu verschijnen.
-
-
-
-Je selecteert de importknop.
-
+Je selecteert de importknop.  
+![](importknop.png)
 
 
 Je kan kiezen tussen ‘Import’ of ‘Upload files’. Als je een grote batch beeldbestanden wilt toevoegen, selecteer je ‘Import’. Voor een bulkimport moet steeds een csv gemaakt worden met daarin de nodige metadata. Hoe je dit moet doen, lees je hier. 
