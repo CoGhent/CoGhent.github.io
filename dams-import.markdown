@@ -7,12 +7,6 @@ nav_order: 1
 
 ## **import instructies (beelden + metadata)**
 
-*Wat heb je nodig?*  
-
-beeldbestanden  
-login  
-
-url: dams.collectie.gent 
 
 Indien je nog geen account hebt, maak eerst een account aan en meld je aan.  
 ![](login.png)
