@@ -14,7 +14,8 @@ login
 
 url: dams.collectie.gent 
 
-Indien je nog geen account hebt, maak eerst een account aan en meld je aan.
+Indien je nog geen account hebt, maak eerst een account aan en meld je aan.  
+![](import.png)
 
 
 
