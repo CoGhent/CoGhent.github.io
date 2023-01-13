@@ -7,9 +7,10 @@ nav_order: 1
 
 ## **import instructies (beelden + metadata)**
 
-Wat heb je nodig? 
-beeldbestanden 
-login
+*Wat heb je nodig?*  
+
+beeldbestanden  
+login  
 
 url: dams.collectie.gent 
 
