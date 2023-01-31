@@ -1,6 +1,6 @@
 --- 
 layout: page
-title: Datacleaning (dutch)
+title: Datacleaning
 permalink: /Datacleaning/
 has_children: true
 nav_order: 1
