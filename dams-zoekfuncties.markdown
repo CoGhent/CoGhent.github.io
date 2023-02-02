@@ -14,7 +14,7 @@ nav_order: 3
 {:toc}
 </details>
 
-## **DAMS zoekfunctionaliteiten**
+# **DAMS zoekfunctionaliteiten**
 DAMS laat toe om op verschilende wijzen de beelden te doorzoeken en op te vragen. 
 
 ## zoekbalk
@@ -33,19 +33,19 @@ Aan de hand van filters is het mogelijk geavanceerde zoekopdrachten uit te voere
 ### type
 **Type**: specifieer via dit zoekveld de type data waarop een zoekactie wordt gedefinieerd.  
 
-| type      | beschrijving |
-|-----------|--------------|
-| asset     |assets zijn objecten (vaak gedefinieerd door een objectnummer) waar een of meerdere mediabestanden aan gekoppeld kunnen zijn.|
-| story     ||
-| frame     ||
-| box       ||
-| testimony ||
-| persoon   ||
-| museum    ||
-| thesaurus || 
-| getty     ||
-| rol       ||
-| gender    || 
+| type      | beschrijving                                                                                                                                                                                                                                                                                      |
+|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **asset**     | assets zijn objecten (vaak gedefinieerd door een objectnummer) waar een of meerdere mediabestanden aan gekoppeld kunnen zijn.                                                                                                                                                                     |
+| **story**     | via deze weg kan je alle stories opvragen of zoeken naar een specifieke story door gecombineerd gebruik met het veld titel                                                                                                                                                                        |
+| **frame**     | via deze weg kan ja alle frames bekijken (onderdeel van een story) of kan je door gecombineerd gebruik met het veld titel naar een specifiek frame zoeken.                                                                                                                                        |
+| **box**       |                                                                                                                                                                                                                                                                                                   |
+| **testimony** | via deze weg kan je alle getuigenissen opvragen of op zoek gaan naar getuigenissen in combinatie met andere filters. Bijvoorbeeld in combinatie met de filter intstelling waardoor het mogelijk is om bijvoorbeeld enkel getuigenissen te bekijken op objecten die behoren tot de collectie van het STAM. |
+| **persoon**   | via deze weg kan je alle personen uit de personen en instellingen gekoppeld aan beelden opvragen en bekijken.                                                                                                                                                                                     |
+| **museum**    | via deze weg krijg je een lijst van alle musea die een of meerdere beelden op DAMS hebben staan.                                                                                                                                                                                                  |
+| **thesaurus** | via deze weg kan je alle thesaurustermen opvragen en bekijken van termen die in gebruik genomen zijn voor het beschrijven van objecten waarvan beeldmateriaal in het DAMS zit.                                                                                                                    | 
+| **getty**     |                                                                                                                                                                                                                                                                                                   |
+| **rol**       |                                                                                                                                                                                                                                                                                                   |
+| **gender**    |                                                                                                                                                                                                                                                                                                   | 
 
 ### titel
 **Titel**: 
