@@ -1,8 +1,8 @@
 --- 
-layout: page
-title: Zoekfunctionaliteiten
+layout: 
+title: 
 parent: 
-nav_order: 3
+nav_order: 
 --- 
 
 <details open markdown="block">
