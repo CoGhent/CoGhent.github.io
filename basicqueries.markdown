@@ -260,7 +260,7 @@ LIMIT 1
 
 [try live](https://stad.gent/sparql?default-graph-uri=&query=PREFIX+cidoc%3A+%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0D%0A%0D%0ASELECT+%3Fo+WHERE+%7B%0D%0A++%3Fs+cidoc%3AP129i_is_subject_of+%3Fo+.%0D%0A++BIND%28RAND%28%29+AS+%3Frandom%29+.%0D%0A%7D+ORDER+BY+%3Frandom%0D%0ALIMIT+1&format=text%2Fhtml&should-sponge=&timeout=0&signal_void=on)
 
-The [Coghent Random Image Viewer](https://coghentapps.herokuapp.com/randomimage), for example, makes use of above query. The code can be found [here](https://github.com/CoGhent/random_image_viewer)
+The Coghent Random Image Viewer, for example, makes use of above query. The code can be found [here](https://github.com/CoGhent/random_image_viewer)
 
 ## Union
 
