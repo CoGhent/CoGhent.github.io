@@ -40,7 +40,7 @@ WHERE {
   ?object cidoc:P102_has_title ?title.
 } 
 ```
-Sometimes multiple properties need to be used to get to the value needed.
+Sometimes, due to a nested hierarchy in the published data, multiple properties, each time going further into the nested structure, need to be used to obtain a certain value. If multiple properties are needed, they are listed in the table below. 
 
 *for example*
 
@@ -54,7 +54,7 @@ WHERE {
 } 
 ```
 
-To help build your queries, the cogent querybuilder can be used: [https://coghentapps.herokuapp.com/querybuilder](https://coghentapps.herokuapp.com/querybuilder)
+To help build your queries, the cogent querybuilder can be used: [http://collectievandegentenaar.pythonanywhere.com/querybuilder](http://collectievandegentenaar.pythonanywhere.com/querybuilder)
 
 ## Prefixes
 
