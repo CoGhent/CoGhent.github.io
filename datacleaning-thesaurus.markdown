@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Datacleaning - thesaurus 
-parent: Datacleaning
+parent: 
 nav_order: 1
 ---
 
