@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Archief Gent
-parent: LDES
+parent: Linked Data Event Stream
 nav_order: 5
 ---
 
