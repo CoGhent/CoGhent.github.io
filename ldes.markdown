@@ -41,11 +41,11 @@ In addition three extra event streams have been published:
 
 ## Using the data
 
-API
+### API
 
 The data from the Linked Data Event Stream can be obtained by using the actor-init-ldes-client to harvest the event streams into json or json-ld format. More info can be found [here](https://coghent.github.io/npmclient.html)
 
-SparQL Endpoint
+### SparQL Endpoint
 
 Another way to access the data in the Linked Data Event Streams is by using SparQL queries to obtain certain sets of data. More info can be found [here](https://coghent.github.io/SparQl%20Endpoint/)
 
