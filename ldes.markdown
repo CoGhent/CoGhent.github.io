@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CoGhent Data
+title: Linked Data Event Stream
 permalink: /LDES/
 has_children: true
 nav_order: 2
