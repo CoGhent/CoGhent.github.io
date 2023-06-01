@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Thesaurus & Agent list
-parent: LDES
+parent: Linked Data Event Stream
 nav_order: 6
 ---
 
