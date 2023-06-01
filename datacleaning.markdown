@@ -1,8 +1,8 @@
 --- 
-layout: page
-title: Datacleaning
+layout: 
+title: 
 permalink: 
-has_children: true
-nav_order: 7
+has_children: 
+nav_order: 
 ---
 
