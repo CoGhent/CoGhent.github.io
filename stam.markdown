@@ -1,7 +1,7 @@
 ---
 layout: page
 title: STAM
-parent: LDES
+parent: Linked Data Event Stream
 nav_order: 4
 ---
 
