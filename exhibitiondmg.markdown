@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Exhibitions DMG
-parent: LDES
+parent: Linked Data Event Stream
 nav_order: 7
 ---
 
