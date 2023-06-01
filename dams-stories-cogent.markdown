@@ -1,8 +1,8 @@
 ---
-layout: page
-title: opladen stories
+layout: 
+title: 
 parent: 
-nav_order: 4
+nav_order: 
 ---
 
 # stories maken in DAMS
