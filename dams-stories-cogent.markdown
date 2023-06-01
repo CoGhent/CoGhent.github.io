@@ -1,7 +1,7 @@
 ---
 layout: page
 title: opladen stories
-parent: DAMS
+parent: 
 nav_order: 4
 ---
 
