@@ -1,6 +1,6 @@
 --- 
-layout: page 
-title: DAMS
+layout: 
+title: 
 permalink: 
 has_children: true
 nav_order: 6
