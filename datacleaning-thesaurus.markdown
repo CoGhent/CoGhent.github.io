@@ -1,8 +1,8 @@
 ---
-layout: page
-title: Datacleaning - thesaurus 
+layout: 
+title: 
 parent: 
-nav_order: 1
+nav_order: 
 ---
 
 # THESAURUS 
