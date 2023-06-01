@@ -59,6 +59,8 @@ Images are published under multiple licenses. The license of an image can be fou
 
 ![image](https://user-images.githubusercontent.com/78723853/202168875-68c163d5-4d57-4f3a-96a4-716d618395f0.png)
 
-The licenses used for published images in the Collections of Ghent are:
+The licenses used for published images in the Collections of Ghent are either Creative Common licenses or Rights Statements. Please consult the documentation for further explanation of the terms of use:
+- Creative Commons: [https://creativecommons.org/](https://creativecommons.org/)
+- Rights Statements: [https://rightsstatements.org/en/](https://rightsstatements.org/en/)
 
 
