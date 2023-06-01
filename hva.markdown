@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Huis van Alijn
-parent: LDES
+parent: Linked Data Event Stream
 nav_order: 2
 ---
 
